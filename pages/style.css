@@ -1,0 +1,81 @@
+@import url("/utils/reset.css");
+@import url("/utils/color.css");
+@import url("/pages/nav.css");
+/* Content Styling */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main {
+  grid-area: main;
+  padding: 3rem 0 0 5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+main h1 {
+  font-size: 4rem;
+}
+#rem_notice {
+  color: var(--PRIMARY);
+  cursor: pointer;
+}
+#rem_notice::after {
+  content: "";
+  background: var(--PRIMARY-M3);
+  position: absolute;
+  top: 8rem;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
+}
+#rem_notice:hover::after {
+  content: "eg: 6rem = 6 x root font-size = 6 x 10px = 60px";
+  background: var(--PRIMARY-M3);
+  padding: 5px 1rem;
+  border-radius: 5px;
+  position: absolute;
+  top: 6rem;
+  color: var(--BG);
+}
+.iframe_wrapper {
+  overflow: auto;
+  width: 90%;
+  margin: 3rem 0 4rem 0;
+  padding-top: 1rem;
+  background: var(--CARBON);
+  text-align: center;
+}
+.iframe_wrapper code iframe {
+  width: 100%;
+}
+main .sui_doc_subtitle {
+  font-size: 2rem;
+}
+main .sui_doc_p {
+  font-size: 1.6rem;
+}
+main span {
+  display: flex;
+  flex-wrap: wrap;
+}
+main pre {
+  font-size: 1.4rem;
+  padding-right: 2rem;
+}
+pre b {
+  background: var(--PRIMARY-M3);
+  color: var(--BG);
+  border-radius: 5px;
+  padding: 5px;
+}
+.sui_avatar_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.sui_badge_icon img {
+  width: fit-content;
+}

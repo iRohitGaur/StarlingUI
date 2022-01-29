@@ -1,0 +1,69 @@
+/*https://starlingui.netlify.app/pages/components/avatar/avatar.css*/
+@import url("/pages/components/avatar/avatar.css");
+
+.sui_avatar {
+  position: relative;
+  overflow: initial;
+}
+.sui_avatar img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.av_square img {
+  border-radius: 10px;
+}
+.av_badge {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid var(--BG);
+  bottom: 0;
+  right: 0;
+}
+.bd_num {
+  color: var(--BG);
+  font-size: 1.2rem;
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.av_square .av_badge {
+  border-radius: 10px;
+  bottom: -5px;
+  right: -5px;
+}
+.av_square .av_badge.bd_left {
+  left: -5px;
+}
+.bd_left {
+  left: 0;
+}
+.bd_xl {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.bd_l {
+  width: 3rem;
+  height: 3rem;
+}
+.bd_m {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.bd_s {
+  width: 2rem;
+  height: 2rem;
+}
+.bd_green {
+  background: yellowgreen;
+}
+.bd_gray {
+  background: gray;
+}
+.bd_red {
+  background: red;
+}
