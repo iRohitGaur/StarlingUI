@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Badge - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="./badge.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Badge</h1>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Badge component in your CSS or HTML:
+      </p>
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520CSS%250A%2540import%2520url%28%2522https%253A%252F%252Fstarlingui.netlify.app%252Fpages%252Fcomponents%252Fbadge%252Fbadge.css%2522%29%253B%250A%250A%252F%252F%2520HTML%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fstarlingui.netlify.app%252Fpages%252Fcomponents%252Fbadge%252Fbadge.css%2522%253E"
+        style="
+          width: 830px;
+          height: auto;
+          border: 0;
+          transform: scale(1);
+          overflow: scroll;
+        "
+        sandbox="allow-scripts allow-same-origin"
+      >
+      </iframe>
+
+      <!-- STATUS & ICON BADGE -->
+      <h2 class="sui_doc_subtitle">Status & Icon Badge</h2>
+      <p class="sui_doc_p">has 4 sizes, 3 colors and 2 position options:</p>
+      <span>
+        <pre><b class="bd_red">bd_red</b></pre>
+        <pre><b class="bd_green">bd_green</b></pre>
+        <pre><b class="bd_gray">bd_gray</b></pre>
+      </span>
+      <span>
+        <pre><b>bd_left:</b> left position</pre>
+        <pre><b>bd_xl:</b> 3.5rem</pre>
+        <pre><b>bd_l:</b> 3rem</pre>
+        <pre><b>bd_m:</b> 2.5rem</pre>
+        <pre><b>bd_s:</b> 2rem</pre>
+      </span>
+      <div class="sui_avatar_wrapper">
+        <div class="sui_avatar av_xl av_txt">
+          <img src="/assets/avatars/av1.svg" alt="" />
+          <i class="av_badge bd_left bd_xl bd_red"></i>
+        </div>
+        <div class="sui_avatar av_xl">
+          <img src="/assets/avatars/av2.svg" alt="" />
+          <i class="av_badge bd_xl bd_green"></i>
+        </div>
+        <div class="sui_avatar av_l">
+          <img src="/assets/avatars/av3.svg" alt="" />
+          <i class="av_badge bd_l bd_gray"></i>
+        </div>
+        <div class="sui_avatar av_m">
+          <img src="/assets/avatars/av1.svg" alt="" />
+          <i class="av_badge bd_m bd_red"></i>
+        </div>
+        <div class="sui_avatar av_s">
+          <img src="/assets/avatars/av2.svg" alt="" />
+          <i class="av_badge bd_s bd_green"></i>
+        </div>
+        <div class="sui_avatar">
+          <img src="/assets/svg/cart.svg" alt="" />
+          <div class="bd_num bd_red">8</div>
+        </div>
+      </div>
+      <div class="flex">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28221%2C228%2C235%2C1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522sui_avatar%2520av_xl%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520%252F%253E%250A%2520%2520%252F%252F%2520Left%2520position%2520%257C%2520XL%2520size%2520%257C%2520Red%2520color%250A%2520%2520%253Ci%2520class%253D%2522av_badge%2520bd_left%2520bd_xl%2520bd_red%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 434px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: scroll;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28221%2C228%2C235%2C1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522sui_avatar%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520%252F%253E%250A%2520%2520%252F%252F%2520Top-Right%2520position%2520%257C%2520Red%2520color%250A%2520%2520%253Cdiv%2520class%253D%2522bd_num%2520bd_red%2522%253E8%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 342px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: scroll;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </div>
+
+      <!-- SQUARE STATUS BADGE -->
+      <h2 class="sui_doc_subtitle">Square Status Badge</h2>
+      <p class="sui_doc_p">
+        similar to the Status Badge, with a different shape:
+      </p>
+      <div class="sui_avatar_wrapper">
+        <div class="sui_avatar av_xl av_square">
+          <img src="/assets/avatars/av1.svg" alt="" />
+          <i class="av_badge bd_left bd_xl bd_red"></i>
+        </div>
+        <div class="sui_avatar av_xl av_square">
+          <img src="/assets/avatars/av2.svg" alt="" />
+          <i class="av_badge bd_xl bd_green"></i>
+        </div>
+        <div class="sui_avatar av_l av_square">
+          <img src="/assets/avatars/av3.svg" alt="" />
+          <i class="av_badge bd_l bd_gray"></i>
+        </div>
+        <div class="sui_avatar av_m av_square">
+          <img src="/assets/avatars/av1.svg" alt="" />
+          <i class="av_badge bd_m bd_red"></i>
+        </div>
+        <div class="sui_avatar av_s av_square">
+          <img src="/assets/avatars/av2.svg" alt="" />
+          <i class="av_badge bd_s bd_green"></i>
+        </div>
+      </div>
+      <div class="flex">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28221%2C228%2C235%2C1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522sui_avatar%2520av_xl%2520av_square%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520%252F%253E%250A%2520%2520%252F%252F%2520Left%2520position%2520%257C%2520XL%2520size%2520%257C%2520Red%2520color%250A%2520%2520%253Ci%2520class%253D%2522av_badge%2520bd_left%2520bd_xl%2520bd_red%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 434px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: scroll;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28221%2C228%2C235%2C1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522sui_avatar%2520av_l%2520av_square%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520%252F%253E%250A%2520%2520%252F%252F%2520L%2520size%2520%257C%2520Gray%2520color%250A%2520%2520%253Ci%2520class%253D%2522av_badge%2520bd_l%2520bd_gray%2522%253E%253C%252Fi%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 367px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: scroll;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </div>
+    </main>
+    <script src="/pages/nav.js"></script>
+  </body>
+</html>

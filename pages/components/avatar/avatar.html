@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Avatar - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="./avatar.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Avatar</h1>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Avatar component in your CSS or HTML:
+      </p>
+
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520CSS%250A%2540import%2520url%28%2522https%253A%252F%252Fstarlingui.netlify.app%252Fpages%252Fcomponents%252Favatar%252Favatar.css%2522%29%253B%250A%250A%252F%252F%2520HTML%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fstarlingui.netlify.app%252Fpages%252Fcomponents%252Favatar%252Favatar.css%2522%253E"
+        style="
+          width: 848px;
+          height: auto;
+          border: 0;
+          transform: scale(1);
+          overflow: scroll;
+        "
+        sandbox="allow-scripts allow-same-origin"
+      >
+      </iframe>
+
+      <!-- PROFILE AVATAR -->
+      <h2 class="sui_doc_subtitle">Profile Avatar</h2>
+      <p class="sui_doc_p">has 6 different sizes:</p>
+      <span>
+        <pre><b>av_xxl:</b> 14rem</pre>
+        <pre><b>av_xl:</b> 12rem</pre>
+        <pre><b>av_l:</b> 10rem</pre>
+        <pre><b>av_m:</b> 8rem</pre>
+        <pre><b>av_s:</b> 6rem</pre>
+        <pre><b>av_xs:</b> 4rem</pre>
+      </span>
+      <div class="sui_avatar_wrapper">
+        <div class="sui_avatar av_xxl">
+          <img src="/assets/avatars/av1.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_xl">
+          <img src="/assets/avatars/av2.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_l">
+          <img src="/assets/avatars/av3.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_m">
+          <img src="/assets/avatars/av1.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_s">
+          <img src="/assets/avatars/av2.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_xs">
+          <img src="/assets/avatars/av3.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="flex">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520XXL%2520Size%250A%253Cdiv%2520class%253D%2522sui_avatar%2520av_xxl%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 300px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: scroll;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520XS%2520Size%250A%253Cdiv%2520class%253D%2522sui_avatar%2520av_xs%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 291px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: scroll;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </div>
+
+      <!-- SQUARE AVATAR -->
+      <h2 class="sui_doc_subtitle">Square Avatar</h2>
+      <p class="sui_doc_p">
+        similar to the Profile Avatar, with a different shape:
+      </p>
+      <span>
+        <pre><b>av_xxl:</b> 14rem</pre>
+        <pre><b>av_xl:</b> 12rem</pre>
+        <pre><b>av_l:</b> 10rem</pre>
+        <pre><b>av_m:</b> 8rem</pre>
+        <pre><b>av_s:</b> 6rem</pre>
+        <pre><b>av_xs:</b> 4rem</pre>
+      </span>
+      <div class="sui_avatar_wrapper">
+        <div class="sui_avatar av_xxl av_square">
+          <img src="/assets/avatars/av1.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_xl av_square">
+          <img src="/assets/avatars/av2.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_l av_square">
+          <img src="/assets/avatars/av3.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_m av_square">
+          <img src="/assets/avatars/av1.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_s av_square">
+          <img src="/assets/avatars/av2.svg" alt="" />
+        </div>
+        <div class="sui_avatar av_xs av_square">
+          <img src="/assets/avatars/av3.svg" alt="" />
+        </div>
+      </div>
+      <div class="flex">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28221%2C228%2C235%2C1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Square%2520%257C%2520XL%2520Size%250A%253Cdiv%2520class%253D%2522sui_avatar%2520av_xl%2520av_square%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 360px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: scroll;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28221%2C228%2C235%2C1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Square%2520%257C%2520XS%2520Size%250A%253Cdiv%2520class%253D%2522sui_avatar%2520av_xs%2520av_square%2522%253E%250A%2520%2520%253Cimg%2520src%253D%2522..%2522%2520alt%253D%2522..%2522%2520%252F%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 360px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: hidden;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </div>
+
+      <!-- TEXT AVATAR -->
+      <h2 class="sui_doc_subtitle">Text Avatar</h2>
+      <p class="sui_doc_p">can be Profile or Square, has 3 color variants:</p>
+      <span>
+        <pre><b class="sui_v1">sui_v1</b></pre>
+        <pre><b class="sui_v2">sui_v2</b></pre>
+        <pre><b class="sui_v3">sui_v3</b></pre>
+      </span>
+      <div class="sui_avatar_wrapper">
+        <div class="sui_avatar av_xxl av_txt sui_v1">
+          <h2>RG</h2>
+        </div>
+        <div class="sui_avatar av_xl av_txt av_square sui_v2">
+          <h2>AL</h2>
+        </div>
+        <div class="sui_avatar av_l av_txt sui_v3">
+          <h2>SG</h2>
+        </div>
+      </div>
+      <div class="flex">
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28221%2C228%2C235%2C1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Profile%2520%257C%2520XXL%2520%257C%2520Text%2520%257C%2520V1%2520Color%250A%253Cdiv%2520class%253D%2522sui_avatar%2520av_xxl%2520av_txt%2520sui_v1%2522%253E%250A%2520%2520%253Ch2%253ERG%253C%252Fh2%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 402px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: scroll;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+        <iframe
+          src="https://carbon.now.sh/embed?bg=rgba%28221%2C228%2C235%2C1%29&t=shades-of-purple&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520Square%2520%257C%2520XL%2520%257C%2520Text%2520%257C%2520V2%2520Color%250A%253Cdiv%2520class%253D%2522sui_avatar%2520av_xl%2520av_txt%2520av_square%2520sui_v2%2522%253E%250A%2520%2520%253Ch2%253EAL%253C%252Fh2%253E%250A%253C%252Fdiv%253E"
+          style="
+            width: 478px;
+            height: auto;
+            border: 0;
+            transform: scale(1);
+            overflow: scroll;
+          "
+          sandbox="allow-scripts allow-same-origin"
+        >
+        </iframe>
+      </div>
+    </main>
+    <script src="/pages/nav.js"></script>
+  </body>
+</html>
