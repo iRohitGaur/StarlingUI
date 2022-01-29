@@ -1,5 +1,5 @@
-@import url("/utils/color.css");
 @import url("/utils/reset.css");
+@import url("/utils/color.css");
 @import url("/pages/nav.css");
 /* Content Styling */
 .flex {
@@ -38,6 +38,17 @@ main h1 {
   top: 6rem;
   color: var(--BG);
 }
+.iframe_wrapper {
+  overflow: auto;
+  width: 90%;
+  margin: 3rem 0 4rem 0;
+  padding-top: 1rem;
+  background: var(--CARBON);
+  text-align: center;
+}
+.iframe_wrapper code iframe {
+  width: 100%;
+}
 main .sui_doc_subtitle {
   font-size: 2rem;
 }
@@ -47,11 +58,6 @@ main .sui_doc_p {
 main span {
   display: flex;
   flex-wrap: wrap;
-}
-main iframe {
-  margin: 2rem 0 4rem 0;
-  max-width: 98%;
-  width: 98%;
 }
 main pre {
   font-size: 1.4rem;

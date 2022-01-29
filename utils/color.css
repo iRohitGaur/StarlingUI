@@ -15,10 +15,12 @@
   --PRIMARY-M5: #e0c5ff;
 
   --PRIMARY-BG: #f6edff;
-  --BG: white;
+  --BG: #ffffff;
   --VARIANT-1: #f7c0b5;
   --VARIANT-2: #b5e2dc;
   --VARIANT-3: #f4da92;
+
+  --CARBON: #2d2b55;
 }
 .sui_v1 {
   background: var(--VARIANT-1);

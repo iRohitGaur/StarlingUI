@@ -11,7 +11,6 @@ header.appendChild(img);
 // Nav
 const nav = document.querySelector("nav");
 const selectedChild = location.pathname.split("/").pop().split(".")[0];
-console.log(selectedChild);
 const getStarted = ["Usage", "Colors", "Typography"];
 const components = [
   "Avatar",
