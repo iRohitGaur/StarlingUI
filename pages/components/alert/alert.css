@@ -1,0 +1,42 @@
+.sui_alert {
+  border-radius: 8px;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+  gap: 1rem;
+}
+.sui_alert img {
+  height: 1.2em;
+  width: 1.2em;
+}
+.al_info {
+  color: var(--BG);
+  background: var(--PRIMARY-M3);
+}
+.al_success {
+  background: var(--VARIANT-2);
+}
+.al_warning {
+  background: var(--VARIANT-3);
+}
+.al_danger {
+  background: var(--VARIANT-1);
+}
+.al_info .al_close {
+  color: var(--BG);
+}
+.al_close {
+  font-size: 0.8em;
+  background: none;
+  border: 0;
+  opacity: 1;
+  margin-left: 1rem;
+}
+.al_close:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
