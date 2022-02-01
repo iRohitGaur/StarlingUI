@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
 :root {
   font-family: "Montserrat", sans-serif;
 
@@ -16,9 +16,25 @@
 
   --PRIMARY-BG: #f6edff;
   --BG: #ffffff;
+
+  --VARIANT-1BG: #fff3e8;
+  --VARIANT-1M1: #ffdacf;
   --VARIANT-1: #f7c0b5;
+  --VARIANT-1P1: #f4afa1;
+
+  --VARIANT-2BG: #e8ffff;
+  --VARIANT-2M1: #cffcf6;
   --VARIANT-2: #b5e2dc;
+  --VARIANT-2P1: #a6dcd5;
+
+  --VARIANT-3BG: #ffffdf;
+  --VARIANT-3M1: #fff4ac;
   --VARIANT-3: #f4da92;
+  --VARIANT-3P1: #f2d380;
+
+  --WHITE: #ffffff;
+  --BLACK: #000000;
+  --BLACK-C: #000000cc;
 
   --CARBON: #2d2b55;
 }

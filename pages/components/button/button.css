@@ -1,0 +1,101 @@
+.sui_btn {
+  background: var(--PRIMARY-M3);
+  border: 2px solid var(--PRIMARY-M3);
+  border-radius: 5px;
+  color: var(--WHITE);
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all ease 0.5s;
+}
+.sui_btn:hover {
+  cursor: pointer;
+  background: var(--PRIMARY-M2);
+  border: 2px solid var(--PRIMARY-M2);
+  color: var(--PRIMARY-BG);
+  box-shadow: 0 0 2px var(--PRIMARY-M3);
+}
+.btn_outline {
+  background: var(--PRIMARY-BG);
+  color: initial;
+}
+.btn_outline.btn_v1 {
+  background: var(--VARIANT-1BG);
+}
+.btn_outline.btn_v2 {
+  background: var(--VARIANT-2BG);
+}
+.btn_outline.btn_v3 {
+  background: var(--VARIANT-3BG);
+}
+.btn_v1 {
+  background: var(--VARIANT-1);
+  border: 2px solid var(--VARIANT-1);
+  color: var(--BLACK-C);
+}
+.btn_v1:hover {
+  background: var(--VARIANT-1P1);
+  border: 2px solid var(--VARIANT-1P1);
+  box-shadow: 0 0 2px var(--VARIANT-1P1);
+  color: var(--BLACK);
+}
+.btn_v2 {
+  background: var(--VARIANT-2);
+  border: 2px solid var(--VARIANT-2);
+  color: var(--BLACK-C);
+}
+.btn_v2:hover {
+  background: var(--VARIANT-2P1);
+  border: 2px solid var(--VARIANT-2P1);
+  box-shadow: 0 0 2px var(--VARIANT-2P1);
+  color: var(--BLACK);
+}
+.btn_v3 {
+  background: var(--VARIANT-3);
+  border: 2px solid var(--VARIANT-3);
+  color: var(--BLACK-C);
+}
+.btn_v3:hover {
+  background: var(--VARIANT-3P1);
+  border: 2px solid var(--VARIANT-3P1);
+  box-shadow: 0 0 2px var(--VARIANT-3P1);
+  color: var(--BLACK);
+}
+.btn_rnd {
+  border-radius: 5rem;
+}
+.btn_fill.btn_rnd:hover {
+  border-radius: 5px;
+}
+.btn_txt {
+  color: initial;
+  background: none;
+  border: none;
+  text-decoration: underline var(--PRIMARY-M3);
+  text-underline-offset: 2px;
+}
+.btn_txt:hover {
+  color: var(--PRIMARY);
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.btn_icon {
+  margin-right: 5px;
+}
+.sui_btn_float {
+  background: transparent;
+  border: none;
+  color: var(--PRIMARY);
+  padding: 1rem 1.5rem;
+  font-size: 6rem;
+  transition: all ease 0.5s;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1;
+}
+.sui_btn_float:hover {
+  cursor: pointer;
+  color: var(--PRIMARY-M1);
+}

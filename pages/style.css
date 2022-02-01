@@ -45,6 +45,7 @@ main h1 {
   padding-top: 1rem;
   background: var(--CARBON);
   text-align: center;
+  border-radius: 8px;
 }
 .iframe_wrapper code iframe {
   width: 100%;
@@ -78,4 +79,40 @@ pre b {
 }
 .sui_badge_icon img {
   width: fit-content;
+}
+.sui_alert_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  width: 90%;
+}
+.sui_alert_types {
+  color: initial;
+  font-weight: 300;
+}
+.sui_btn_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.sui_btn_float::before {
+  color: var(--WHITE);
+  font-size: 2rem;
+  content: "";
+  background: var(--PRIMARY-M3);
+  border-radius: 5px;
+  position: fixed;
+  bottom: 9rem;
+  right: 9rem;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.sui_btn_float:hover::before {
+  content: "I am a floating button";
+  position: fixed;
+  bottom: 9rem;
+  right: 11rem;
+  padding: 1rem 1.5rem;
 }
