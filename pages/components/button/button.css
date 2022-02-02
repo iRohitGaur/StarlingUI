@@ -10,8 +10,8 @@
 }
 .sui_btn:hover {
   cursor: pointer;
-  /* background: var(--PRIMARY-M2);
-  border: 2px solid var(--PRIMARY-M2); */
+  background: var(--PRIMARY-M1);
+  border: 2px solid var(--PRIMARY-M1);
   color: var(--PRIMARY-BG);
   box-shadow: 0 0 2px var(--PRIMARY-M1);
   opacity: 0.9;
