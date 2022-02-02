@@ -33,18 +33,7 @@ main h1 {
   top: 3rem;
   color: var(--BG);
 }
-.iframe_wrapper {
-  overflow: auto;
-  width: 90%;
-  margin: 3rem 0 4rem 0;
-  padding-top: 1rem;
-  background: var(--CARBON);
-  text-align: center;
-  border-radius: 8px;
-}
-.iframe_wrapper code iframe {
-  width: 100%;
-}
+/************* Prism JS Highlight CSS override START *****************/
 .code_wrapper {
   font-size: 1.4rem;
   overflow: auto;
@@ -56,11 +45,36 @@ main h1 {
 .code_wrapper .code-toolbar pre {
   background: none;
 }
+.code_wrapper .code-toolbar .language-css,
+.code_wrapper .code-toolbar .language-html {
+  color: var(--CODE-COMMENT);
+}
+.code_wrapper .code-toolbar .language-css .token.atrule {
+  color: var(--CODE-ORANGE);
+}
+.code_wrapper .code-toolbar .language-css .token.function {
+  color: var(--CODE-BLUE);
+}
+.code_wrapper .code-toolbar .language-css .token.url {
+  color: var(--CODE-GREEN);
+}
+.code_wrapper .code-toolbar .language-markup {
+  color: var(--VARIANT-3P1);
+}
+.code_wrapper .code-toolbar .token.tag {
+  color: var(--CODE-BLUE);
+}
+.code_wrapper .code-toolbar .token.attr-name {
+  color: var(--CODE-ORANGE);
+}
+.code_wrapper .code-toolbar .token.attr-value {
+  color: var(--CODE-GREEN);
+}
 .code_wrapper .toolbar .toolbar-item .copy-to-clipboard-button {
   color: var(--WHITE);
   background: var(--PRIMARY-M3);
   padding: 5px 10px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 .code_wrapper .toolbar .toolbar-item .copy-to-clipboard-button:hover {
   cursor: pointer;
@@ -68,6 +82,13 @@ main h1 {
 .code_wrapper .code-toolbar .toolbar {
   opacity: 0.7;
 }
+.line-numbers span {
+  display: revert;
+}
+.line-numbers .token.punctuation {
+  color: var(--CODE-ORANGE);
+}
+/************* Prism JS Highlight CSS override END *****************/
 main .sui_doc_subtitle {
   font-size: 2rem;
 }
@@ -77,9 +98,6 @@ main .sui_doc_p {
 main span {
   display: flex;
   flex-wrap: wrap;
-}
-.line-numbers span {
-  display: revert;
 }
 main pre {
   font-size: 1.4rem;

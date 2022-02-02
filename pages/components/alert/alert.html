@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="/pages/style.css" />
     <link rel="stylesheet" href="/utils/color.css" />
     <link rel="stylesheet" href="./alert.css" />
+    <link rel="stylesheet" href="/utils/prism.css" />
   </head>
   <body>
     <header></header>
@@ -38,21 +39,17 @@
         Instructions to import the Alert component in your CSS or HTML:
       </p>
 
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/2qLIWjVmMCqgZL7XJdFj"
-            style="
-              width: 755px;
-              height: 200px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/alert/alert.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/alert/alert.css">
+        </script>
       </div>
 
       <h2 class="sui_doc_subtitle">Simple Alert</h2>
@@ -69,21 +66,14 @@
         <div class="sui_alert al_warning">This is a simple warning Alert</div>
         <div class="sui_alert al_danger">This is a simple danger Alert</div>
       </div>
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/RtFhWlQEOYgpezslLRi0"
-            style="
-              width: 570px;
-              height: 150px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_alert al_info">This is a simple info Alert</div>
+          <div class="sui_alert al_success">This is a simple success Alert</div>
+          <div class="sui_alert al_warning">This is a simple warning Alert</div>
+          <div class="sui_alert al_danger">This is a simple danger Alert</div>
+        </script>
       </div>
 
       <h2 class="sui_doc_subtitle">Standard Alert</h2>
@@ -113,23 +103,37 @@
           <button class="al_close">&#x2715;</button>
         </div>
       </div>
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/CZ9MvLEetvLCKFN7X9ir"
-            style="
-              width: 620px;
-              height: 495px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_alert al_info">
+            <img src="/assets/svg/info.svg" alt="info icon" />
+            <!-- Your alert message comes here.. -->
+            info Alert with icon and close button
+            <button class="al_close">&#x2715;</button>
+          </div>
+
+          <div class="sui_alert al_success">
+            <!-- Default icons are provided, you can change them if you wish -->
+            <img src="/assets/svg/success.svg" alt="success icon" />
+            success Alert with icon and close button
+            <button class="al_close">&#x2715;</button>
+          </div>
+
+          <div class="sui_alert al_warning">
+            <img src="/assets/svg/warning.svg" alt="warning icon" />
+            warning Alert with icon and close button
+            <button class="al_close">&#x2715;</button>
+          </div>
+
+          <div class="sui_alert al_danger">
+            <img src="/assets/svg/danger.svg" alt="danger icon" />
+            danger Alert with icon and close button
+            <button class="al_close">&#x2715;</button>
+          </div>
+        </script>
       </div>
     </main>
+    <script src="/utils/prism.js"></script>
     <script src="/pages/nav.js"></script>
   </body>
 </html>

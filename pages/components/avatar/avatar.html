@@ -23,7 +23,9 @@
     />
     <title>Starling UI - Avatar - Rohit Gaur</title>
     <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="/utils/color.css" />
     <link rel="stylesheet" href="./avatar.css" />
+    <link rel="stylesheet" href="/utils/prism.css" />
   </head>
   <body>
     <header></header>
@@ -37,21 +39,17 @@
         Instructions to import the Avatar component in your CSS or HTML:
       </p>
 
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/nPRJTnWQQZ0H20RD6rzZ"
-            style="
-              width: 760px;
-              height: 170px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/avatar/avatar.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/avatar/avatar.css">
+        </script>
       </div>
 
       <!-- PROFILE AVATAR -->
@@ -86,21 +84,18 @@
         </div>
       </div>
 
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/CYU5ZjUmb9O8Pg8346cC"
-            style="
-              width: 272px;
-              height: 230px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- XXL Size -->
+          <div class="sui_avatar av_xxl">
+            <img src=".." alt=".." />
+          </div>
+
+          <!-- XS Size -->
+          <div class="sui_avatar av_xs">
+            <img src=".." alt=".." />
+          </div>
+        </script>
       </div>
 
       <!-- SQUARE AVATAR -->
@@ -137,21 +132,18 @@
         </div>
       </div>
 
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/oaDUl3D4Ho7pJI67Cy7L"
-            style="
-              width: 339px;
-              height: 240px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Square | XL Size -->
+          <div class="sui_avatar av_xl av_square">
+            <img src=".." alt=".." />
+          </div>
+
+          <!-- Square | XS Size -->
+          <div class="sui_avatar av_xs av_square">
+            <img src=".." alt=".." />
+          </div>
+        </script>
       </div>
 
       <!-- TEXT AVATAR -->
@@ -174,23 +166,21 @@
         </div>
       </div>
 
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/jhQye0TObexSQ6aov6DJ"
-            style="
-              width: 444px;
-              height: 224px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <!-- Profile | XXL | Text | V1 Color -->
+          <div class="sui_avatar av_xxl av_txt sui_v1">
+            <h2>RG</h2>
+          </div>
+
+          <!-- Square | XL | Text | V2 Color -->
+          <div class="sui_avatar av_xl av_txt av_square sui_v2">
+            <h2>AL</h2>
+          </div>
+        </script>
       </div>
     </main>
+    <script src="/utils/prism.js"></script>
     <script src="/pages/nav.js"></script>
   </body>
 </html>

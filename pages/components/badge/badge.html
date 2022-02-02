@@ -23,7 +23,9 @@
     />
     <title>Starling UI - Badge - Rohit Gaur</title>
     <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="/utils/color.css" />
     <link rel="stylesheet" href="./badge.css" />
+    <link rel="stylesheet" href="/utils/prism.css" />
   </head>
   <body>
     <header></header>
@@ -37,21 +39,17 @@
         Instructions to import the Badge component in your CSS or HTML:
       </p>
 
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/fvQeJu6tdQSW2kS9oXnM"
-            style="
-              width: 746px;
-              height: 160px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/badge/badge.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/badge/badge.css">
+        </script>
       </div>
 
       <!-- STATUS & ICON BADGE -->
@@ -96,21 +94,20 @@
         </div>
       </div>
 
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/7aSu22X9wrtUtsMQ8oPD"
-            style="
-              width: 392px;
-              height: 280px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_avatar av_xl">
+            <img src=".." alt=".." />
+            <!-- Left position | XL size | Red color -->
+            <i class="av_badge bd_left bd_xl bd_red"></i>
+          </div>
+
+          <div class="sui_avatar">
+            <img src=".." alt=".." />
+            <!-- Top-Right position | Red color -->
+            <div class="bd_num bd_red">8</div>
+          </div>
+        </script>
       </div>
 
       <!-- SQUARE STATUS BADGE -->
@@ -141,23 +138,23 @@
         </div>
       </div>
 
-      <div class="iframe_wrapper">
-        <code>
-          <iframe
-            src="https://carbon.now.sh/embed/iWvme5jRomMpAi4z6Hhx"
-            style="
-              width: 392px;
-              height: 280px;
-              border: 0;
-              transform: scale(1);
-              overflow: hidden;
-            "
-            sandbox="allow-scripts allow-same-origin"
-          >
-          </iframe>
-        </code>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_avatar av_xl av_square">
+            <img src=".." alt=".." />
+            <!-- Left position | XL size | Red color -->
+            <i class="av_badge bd_left bd_xl bd_red"></i>
+          </div>
+
+          <div class="sui_avatar av_l av_square">
+            <img src=".." alt=".." />
+            <!-- L size | Gray color -->
+            <i class="av_badge bd_l bd_gray"></i>
+          </div>
+        </script>
       </div>
     </main>
+    <script src="/utils/prism.js"></script>
     <script src="/pages/nav.js"></script>
   </body>
 </html>
