@@ -1,12 +1,19 @@
 // Header
 const header = document.querySelector("header");
+const logoWrapper = document.createElement("div");
 const h1 = document.createElement("h1");
 h1.innerHTML = "U";
 const img = document.createElement("img");
 img.src = "/assets/starling.svg";
 img.alt = "Starling";
-header.appendChild(h1);
-header.appendChild(img);
+logoWrapper.appendChild(h1);
+logoWrapper.appendChild(img);
+header.appendChild(logoWrapper);
+const ctaWrapper = document.createElement("div");
+const ih =
+  '<button id="burger" class="sui_btn btn_icon_fa"><i class="fas fa-bars"></i></button>';
+ctaWrapper.innerHTML = ih;
+header.appendChild(ctaWrapper);
 
 // Nav
 const nav = document.querySelector("nav");
@@ -47,4 +54,30 @@ function addListener(item, child, component) {
       : `/pages/getting-started/${lowerCasedItem}.html`;
     location = path;
   });
+}
+
+const burger = document.querySelector("#burger");
+burger.addEventListener("click", () => toggleNav());
+
+const vwListener = window.matchMedia("(max-width: 700px)");
+vwListener.addEventListener("change", () => {
+  toggleNav();
+  toggleBurger();
+});
+
+if (window.innerWidth < 701) {
+  nav.className = "collapsed";
+} else {
+  burger.classList.add("collapsed");
+}
+
+function toggleNav() {
+  nav.classList.contains("collapsed")
+    ? (nav.className = "")
+    : (nav.className = "collapsed");
+}
+function toggleBurger() {
+  burger.classList.contains("collapsed")
+    ? burger.classList.remove("collapsed")
+    : burger.classList.add("collapsed");
 }

@@ -14,10 +14,18 @@ body {
 header {
   grid-area: header;
   display: flex;
-  align-items: center;
-  padding-left: 4.5rem;
+  justify-content: space-between;
+  padding: 0 4.5rem;
   position: relative;
   width: 100%;
+}
+header div {
+  display: flex;
+  align-items: center;
+}
+header i {
+  font-size: 2rem;
+  color: var(--PRIMARY);
 }
 header h1 {
   font-size: 3.5rem;
@@ -47,7 +55,16 @@ nav {
   font-size: 1.6rem;
   position: relative;
 }
-
+main {
+  grid-area: main;
+  margin: 3rem 0 0 5rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+.collapsed {
+  display: none;
+}
 .starling_nav_title {
   width: 100%;
   padding-top: 2rem;
@@ -81,4 +98,33 @@ nav {
   height: 2.5rem;
   left: 0;
   position: absolute;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main";
+  }
+  nav {
+    position: absolute;
+    background: var(--BG);
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 6rem;
+    display: flex;
+    justify-content: center;
+  }
+  .starling_nav_title {
+    text-align: center;
+  }
+  .starling_nav_item {
+    text-align: center;
+  }
+  main {
+    margin-left: 2rem;
+  }
 }

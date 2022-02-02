@@ -1,19 +1,20 @@
 .sui_btn {
-  background: var(--PRIMARY-M3);
-  border: 2px solid var(--PRIMARY-M3);
+  background: var(--PRIMARY-M1);
+  border: 2px solid var(--PRIMARY-M1);
   border-radius: 5px;
   color: var(--WHITE);
-  padding: 1rem 1.5rem;
-  font-size: 1.5rem;
+  padding: 5px 15px;
+  font-size: 1.6rem;
   font-weight: 500;
   transition: all ease 0.5s;
 }
 .sui_btn:hover {
   cursor: pointer;
-  background: var(--PRIMARY-M2);
-  border: 2px solid var(--PRIMARY-M2);
+  /* background: var(--PRIMARY-M2);
+  border: 2px solid var(--PRIMARY-M2); */
   color: var(--PRIMARY-BG);
-  box-shadow: 0 0 2px var(--PRIMARY-M3);
+  box-shadow: 0 0 2px var(--PRIMARY-M1);
+  opacity: 0.9;
 }
 .btn_outline {
   background: var(--PRIMARY-BG);
@@ -98,4 +99,45 @@
 .sui_btn_float:hover {
   cursor: pointer;
   color: var(--PRIMARY-M1);
+}
+.btn_icon_fa {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: var(--PRIMARY);
+  font-size: 2rem;
+  width: fit-content;
+}
+.btn_icon_fa:hover {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: var(--PRIMARY-M1);
+}
+.sui_btn_flpos {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: var(--PRIMARY);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 2rem;
+  width: fit-content;
+  transition: all ease 0.2s;
+}
+.sui_btn_flpos:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.btn_flpos_tl {
+  left: 5px;
+}
+.btn_flpos_br {
+  bottom: 5px;
+  right: 5px;
+}
+.btn_flpos_bl {
+  bottom: 5px;
+  left: 5px;
 }
