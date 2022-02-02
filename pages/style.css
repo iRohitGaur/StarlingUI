@@ -1,18 +1,13 @@
 @import url("/utils/reset.css");
 @import url("/utils/color.css");
 @import url("/pages/nav.css");
+@import url("/pages/components/button/button.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 /* Content Styling */
 .flex {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-}
-main {
-  grid-area: main;
-  padding: 3rem 0 0 5rem;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  position: relative;
 }
 main h1 {
   font-size: 4rem;
@@ -25,7 +20,7 @@ main h1 {
   content: "";
   background: var(--PRIMARY-M3);
   position: absolute;
-  top: 8rem;
+  top: 5rem;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
@@ -35,7 +30,7 @@ main h1 {
   padding: 5px 1rem;
   border-radius: 5px;
   position: absolute;
-  top: 6rem;
+  top: 3rem;
   color: var(--BG);
 }
 .iframe_wrapper {
@@ -50,6 +45,29 @@ main h1 {
 .iframe_wrapper code iframe {
   width: 100%;
 }
+.code_wrapper {
+  font-size: 1.4rem;
+  overflow: auto;
+  width: 90%;
+  margin: 3rem 0 4rem 0;
+  background: var(--CARBON);
+  border-radius: 8px;
+}
+.code_wrapper .code-toolbar pre {
+  background: none;
+}
+.code_wrapper .toolbar .toolbar-item .copy-to-clipboard-button {
+  color: var(--WHITE);
+  background: var(--PRIMARY-M3);
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+.code_wrapper .toolbar .toolbar-item .copy-to-clipboard-button:hover {
+  cursor: pointer;
+}
+.code_wrapper .code-toolbar .toolbar {
+  opacity: 0.7;
+}
 main .sui_doc_subtitle {
   font-size: 2rem;
 }
@@ -59,6 +77,9 @@ main .sui_doc_p {
 main span {
   display: flex;
   flex-wrap: wrap;
+}
+.line-numbers span {
+  display: revert;
 }
 main pre {
   font-size: 1.4rem;
@@ -115,4 +136,9 @@ pre b {
   bottom: 9rem;
   right: 11rem;
   padding: 1rem 1.5rem;
+}
+.sui_card_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }

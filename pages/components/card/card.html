@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Card - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="/utils/color.css" />
+    <link rel="stylesheet" href="/pages/components/button/button.css" />
+    <link rel="stylesheet" href="./card.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/utils/prism.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <!-- Card Intro START -->
+      <h1>Card</h1>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Card component in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/button/button.css");
+          @import url("https://starlingui.netlify.app/pages/components/card/card.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/button/button.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/card/card.css">
+        </script>
+      </div>
+      <!-- Card Intro END -->
+
+      <!-- Standard Card START -->
+      <h2 class="sui_doc_subtitle">Standard Card</h2>
+      <p class="sui_doc_p">
+        is a vertical card. It can have have badge and text overlay (hover the
+        card title):
+      </p>
+
+      <div class="sui_card_wrapper">
+        <div class="sui_card">
+          <div class="card_img_wrapper">
+            <span class="card_overlay">New</span>
+            <button class="sui_btn_flpos">
+              <i class="far fa-heart"></i>
+            </button>
+            <img
+              src="https://ih1.redbubble.net/image.723788174.3155/ssrco,classic_tee,womens,9ec0d5:0d26d5c715,front_alt,tall_three_quarter,750x1000.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card_content_wrapper">
+            <h2 class="card_content_title">Trash Gryphons: Pigeon Rat</h2>
+            <h4 class="card_content_seller">
+              by
+              <a href="http://cyaneus.com/" class="btn_txt"
+                >Mel Tillery (Cyaneus)</a
+              >
+            </h4>
+            <div class="card_content_desc">
+              This literal flying rat is actually somewhat clever and quite
+              harmless, but large groups of them are considered a nuisance in
+              urban environments.
+            </div>
+            <div class="card_cta">
+              <span class="card_price">
+                $20.50
+                <span class="card_price_old">$25.00</span>
+                <span class="card_price_off">18% off</span>
+              </span>
+              <button class="sui_btn">
+                <i class="btn_icon fas fa-shopping-cart"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sui_card card_badge">
+          <div class="card_img_wrapper">
+            <span class="card_overlay">New</span>
+            <button class="sui_btn_flpos">
+              <i class="far fa-heart"></i>
+            </button>
+            <img
+              src="https://ih1.redbubble.net/image.647394694.7571/ssrco,classic_tee,mens,541e68:68f9e309b0,front_alt,tall_portrait,750x1000.u4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card_content_wrapper">
+            <h2 class="card_content_title">
+              Pride Birds: Gouldian Finch Classic T-Shirt
+            </h2>
+            <h4 class="card_content_seller">
+              by
+              <a href="http://cyaneus.com/" class="btn_txt"
+                >Mel Tillery (Cyaneus)</a
+              >
+            </h4>
+            <div class="card_content_desc">
+              The standard, traditional t-shirt for everyday wear. Classic,
+              generous, boxy fit.
+            </div>
+            <div class="card_cta">
+              <span class="card_price">
+                $20.50
+                <span class="card_price_old">$25.00</span>
+                <span class="card_price_off">18% off</span>
+              </span>
+              <button class="sui_btn">
+                <i class="btn_icon fas fa-shopping-cart"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          // add 'card_badge' to the class to activate the visibility of overlay
+          <div class="sui_card">
+            <div class="card_img_wrapper">
+              <span class="card_overlay">New</span>
+              <button class="sui_btn_flpos">
+                <i class="far fa-heart"></i>
+              </button>
+              <img src=".." alt=".." />
+            </div>
+            <div class="card_content_wrapper">
+              <h2 class="card_content_title">TITLE HERE</h2>
+              <h4 class="card_content_seller">SELLER HERE</h4>
+              <div class="card_content_desc">CONTENT HERE</div>
+              <div class="card_cta">
+                <span class="card_price">
+                  $20.50
+                  <span class="card_price_old">$25.00</span>
+                  <span class="card_price_off">18% off</span>
+                </span>
+                <button class="sui_btn">
+                  <i class="btn_icon fas fa-shopping-cart"></i>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </script>
+      </div>
+      <!-- Standard Card END -->
+
+      <!-- Horizontal Card START -->
+      <h2 class="sui_doc_subtitle">Horizontal Card</h2>
+      <p class="sui_doc_p">
+        similar to standard card in horizontal spread (list)
+      </p>
+
+      <div class="sui_card_wrapper">
+        <div class="sui_card card_list">
+          <div class="card_img_wrapper">
+            <span class="card_overlay">New</span>
+            <button class="sui_btn_flpos">
+              <i class="far fa-heart"></i>
+            </button>
+            <img
+              src="https://ih1.redbubble.net/image.723788174.3155/ssrco,classic_tee,womens,9ec0d5:0d26d5c715,front_alt,tall_three_quarter,750x1000.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card_content_wrapper">
+            <h2 class="card_content_title">Trash Gryphons: Pigeon Rat</h2>
+            <h4 class="card_content_seller">
+              by
+              <a href="http://cyaneus.com/" class="btn_txt"
+                >Mel Tillery (Cyaneus)</a
+              >
+            </h4>
+            <div class="card_content_desc">
+              This literal flying rat is actually somewhat clever and quite
+              harmless, but large groups of them are considered a nuisance in
+              urban environments.
+            </div>
+            <div class="card_cta">
+              <span class="card_price">
+                $20.50
+                <span class="card_price_old">$25.00</span>
+                <span class="card_price_off">18% off</span>
+              </span>
+              <button class="sui_btn">
+                <i class="btn_icon fas fa-shopping-cart"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sui_card card_list card_badge">
+          <div class="card_img_wrapper">
+            <span class="card_overlay">New</span>
+            <button class="sui_btn_flpos">
+              <i class="far fa-heart"></i>
+            </button>
+            <img
+              src="https://ih1.redbubble.net/image.647394694.7571/ssrco,classic_tee,mens,541e68:68f9e309b0,front_alt,tall_portrait,750x1000.u4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card_content_wrapper">
+            <h2 class="card_content_title">
+              Pride Birds: Gouldian Finch Classic T-Shirt
+            </h2>
+            <h4 class="card_content_seller">
+              by
+              <a href="http://cyaneus.com/" class="btn_txt"
+                >Mel Tillery (Cyaneus)</a
+              >
+            </h4>
+            <div class="card_content_desc">
+              The standard, traditional t-shirt for everyday wear. Classic,
+              generous, boxy fit.
+            </div>
+            <div class="card_cta">
+              <span class="card_price">
+                $20.50
+                <span class="card_price_old">$25.00</span>
+                <span class="card_price_off">18% off</span>
+              </span>
+              <button class="sui_btn">
+                <i class="btn_icon fas fa-shopping-cart"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_card card_list">
+            // similar to standard card
+          </div>
+        </script>
+      </div>
+      <!-- Horizontal Card END -->
+
+      <!-- Text only and Dismiss START -->
+      <h2 class="sui_doc_subtitle">Text and Dismiss Card</h2>
+      <p class="sui_doc_p">
+        text only card can be used with title, content and CTA. Dismiss button
+        can be used on any card to dismiss it:
+      </p>
+
+      <div class="sui_card_wrapper">
+        <div class="sui_card">
+          <div class="card_content_wrapper">
+            <button class="sui_btn_flpos">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="card_text_title_wrapper">
+              <h2 class="card_content_title">Violet-backed Starling</h2>
+              <h3>Feb 1 2022</h3>
+            </div>
+            <div class="card_content_text">
+              The violet-backed starling is a common bird in Sub-Saharan Africa,
+              occurring in most locations with the exception of the dense
+              rainforest of the Congo Basin, and the more arid parts of
+              southwestern Africa. It is found in open woodland, gallery
+              forests, forest verges and clearings. In the Chyulu Hills of
+              Kenya, it occurs at altitudes of up to 2,100 m.
+            </div>
+            <div class="card_cta_text">
+              <button class="sui_btn btn_v2">READ</button>
+              <button class="sui_btn btn_v3">BOOKMARK</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="sui_card">
+          <div class="card_img_wrapper">
+            <span class="card_overlay">New</span>
+            <button class="sui_btn_flpos">
+              <i class="fas fa-times"></i>
+            </button>
+            <img
+              src="https://ih1.redbubble.net/image.647394694.7571/ssrco,classic_tee,mens,541e68:68f9e309b0,front_alt,tall_portrait,750x1000.u4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="card_content_wrapper">
+            <h2 class="card_content_title">
+              Pride Birds: Gouldian Finch Classic T-Shirt
+            </h2>
+            <h4 class="card_content_seller">
+              by
+              <a href="http://cyaneus.com/" class="btn_txt"
+                >Mel Tillery (Cyaneus)</a
+              >
+            </h4>
+            <div class="card_content_desc">
+              The standard, traditional t-shirt for everyday wear. Classic,
+              generous, boxy fit.
+            </div>
+            <div class="card_cta">
+              <span class="card_price">
+                $20.50
+                <span class="card_price_old">$25.00</span>
+                <span class="card_price_off">18% off</span>
+              </span>
+              <button class="sui_btn">
+                <i class="btn_icon fas fa-shopping-cart"></i>
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_card">
+            <div class="card_content_wrapper">
+              <button class="sui_btn_flpos">
+                <i class="fas fa-times"></i>
+              </button>
+              <div class="card_text_title_wrapper">
+                <h2 class="card_content_title">TITLE HERE</h2>
+                <h3>Feb 1 2022</h3>
+              </div>
+              <div class="card_content_text">CONTENT HERE</div>
+              <div class="card_cta_text">
+                <button class="sui_btn btn_v2">READ</button>
+                <button class="sui_btn btn_v3">BOOKMARK</button>
+              </div>
+            </div>
+          </div>
+        </script>
+      </div>
+      <!-- Text only and Dismiss END -->
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+    <script src="./card.js"></script>
+  </body>
+</html>
