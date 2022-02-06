@@ -113,6 +113,7 @@
   border: 0;
   box-shadow: none;
   color: var(--PRIMARY-M1);
+  cursor: pointer;
 }
 .sui_btn_flpos {
   background: transparent;

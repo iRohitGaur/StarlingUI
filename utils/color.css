@@ -33,8 +33,14 @@
   --VARIANT-3P1: #f2d380;
 
   --WHITE: #ffffff;
+  --WHITE-C: #ffffffcc;
+  --WHITE-A: #ffffffaa;
+
+
   --BLACK: #000000;
   --BLACK-C: #000000cc;
+  --BLACK-A: #000000aa;
+  --BLACK-BG:#232128;
 
   --PRICE-OFFER: red;
 
@@ -44,6 +50,9 @@
   --CODE-BLUE: #9effff;
   --CODE-GREEN: #a5ff90;
   --CODE-COMMENT: #b362ff;
+
+  --INPUT-W: red;
+  --INPUT-R: green;
 }
 .sui_v1 {
   background: var(--VARIANT-1);

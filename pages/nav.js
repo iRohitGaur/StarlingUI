@@ -59,13 +59,13 @@ function addListener(item, child, component) {
 const burger = document.querySelector("#burger");
 burger.addEventListener("click", () => toggleNav());
 
-const vwListener = window.matchMedia("(max-width: 700px)");
+const vwListener = window.matchMedia("(max-width: 768px)");
 vwListener.addEventListener("change", () => {
   toggleNav();
   toggleBurger();
 });
 
-if (window.innerWidth < 701) {
+if (window.innerWidth < 769) {
   nav.className = "collapsed";
 } else {
   burger.classList.add("collapsed");

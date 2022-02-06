@@ -1,0 +1,22 @@
+.sui_img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.sui_img img {
+  max-width: revert;
+  object-fit: cover;
+}
+.img_fit img {
+  width: 100%;
+  object-fit: contain;
+}
+.img_rnd {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+}
+.img_rnd img {
+  width: 100%;
+}
