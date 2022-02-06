@@ -1,0 +1,112 @@
+.sui_input {
+  position: relative;
+}
+.sui_input input,
+.sui_input textarea {
+  width: 100%;
+  padding: 12px 15px 8px 15px;
+  border: 1px solid var(--BLACK-C);
+  border-radius: 4px;
+  font-size: 1.6rem;
+  outline: none;
+}
+.sui_input input:focus,
+.sui_input textarea:focus {
+  border-color: var(--PRIMARY);
+}
+.input_req::before {
+  content: "*";
+  font-size: 1.6rem;
+  color: var(--INPUT-W);
+  position: absolute;
+  top: -1.2rem;
+  left: 8px;
+  z-index: 1;
+}
+.input_desc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.2rem;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  color: var(--BLACK-A);
+  padding: 0 10px;
+  position: absolute;
+  width: 100%;
+  top: -1.2rem;
+  pointer-events: none;
+}
+.sui_input:focus-within .input_desc {
+  color: var(--PRIMARY);
+}
+.input_er:focus-within .input_desc {
+  color: var(--INPUT-W);
+}
+.input_ss:focus-within .input_desc {
+  color: var(--INPUT-R);
+}
+.input_lbl,
+.input_info {
+  background: var(--BG);
+  padding: 0 5px;
+}
+.input_info {
+  display: none;
+  margin-left: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.input_er .input_info {
+  display: revert;
+  color: var(--INPUT-W);
+}
+.input_er input {
+  border-color: var(--INPUT-W);
+}
+.input_er input:focus {
+  border-color: var(--INPUT-W);
+}
+.input_ss .input_info {
+  display: revert;
+  color: var(--INPUT-R);
+}
+.input_ss input {
+  border-color: var(--INPUT-R);
+}
+.input_ss input:focus {
+  border-color: var(--INPUT-R);
+}
+.input_er textarea {
+  border-color: var(--INPUT-W);
+}
+.input_er textarea:focus {
+  border-color: var(--INPUT-W);
+}
+.input_ss textarea {
+  border-color: var(--INPUT-R);
+}
+.input_ss textarea:focus {
+  border-color: var(--INPUT-R);
+}
+.input_ta .input_desc {
+  gap: 4.6rem;
+}
+.input_icon .fas {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1.5rem;
+  top: 1.6rem;
+}
+.input_icon input {
+  padding-left: 4rem;
+}
+.input_icon .input_desc {
+  padding-left: 3.4rem;
+}
+.input_icon:focus-within .fas {
+  color: var(--PRIMARY);
+}
+.input_icon.input_req::before {
+  left: 3.4rem;
+}

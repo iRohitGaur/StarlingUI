@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Input - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="/utils/color.css" />
+    <link rel="stylesheet" href="./input.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <!-- Image Intro START -->
+      <h1>Input</h1>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Input component in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/input/input.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/input/input.css">
+        </script>
+      </div>
+      <!-- Card Intro END -->
+
+      <!-- Standard Input START -->
+      <h2 class="sui_doc_subtitle">Text Input</h2>
+      <p class="sui_doc_p">
+        by default, a SUI input can be used with an overhead label. Add
+        <b>input_req</b> class to mark the input field as required.
+      </p>
+      <p class="sui_doc_p">
+        The demo below shows a default and a required input.
+      </p>
+      <div class="sui_input_wrapper">
+        <!-- Standard Input -->
+        <div class="sui_input">
+          <div class="input_desc">
+            <span class="input_lbl">First Name</span>
+            <span class="input_info"></span>
+          </div>
+          <input type="text" />
+        </div>
+
+        <!-- Required Input -->
+        <div class="sui_input input_req">
+          <div class="input_desc">
+            <span class="input_lbl">username</span>
+            <span class="input_info"></span>
+          </div>
+          <input type="text" />
+        </div>
+      </div>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Standard Input -->
+          <div class="sui_input">
+            <div class="input_desc">
+              <span class="input_lbl">First Name</span>
+              <span class="input_info"></span>
+            </div>
+            <input type="text" />
+          </div>
+
+          <!-- Required Input -->
+          <div class="sui_input input_req">
+            <div class="input_desc">
+              <span class="input_lbl">username</span>
+              <span class="input_info"></span>
+            </div>
+            <input type="text" />
+          </div>
+        </script>
+      </div>
+      <!-- Standard Input END -->
+
+      <!-- Input with validation START -->
+      <h2 class="sui_doc_subtitle">Input with validation</h2>
+      <p class="sui_doc_p">
+        similar to the default input, with diffent color style and validation
+        message
+      </p>
+      <div class="sui_input_wrapper">
+        <!-- Input with error message -->
+        <div class="sui_input input_req input_er">
+          <div class="input_desc">
+            <span class="input_lbl">username</span>
+            <span class="input_info">username not available</span>
+          </div>
+          <input type="text" value="rohit" />
+        </div>
+
+        <!-- Input with success message -->
+        <div class="sui_input input_req input_ss">
+          <div class="input_desc">
+            <span class="input_lbl">username</span>
+            <span class="input_info">username is available</span>
+          </div>
+          <input type="text" value="iRohitGaur" />
+        </div>
+      </div>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Input with error message -->
+          <div class="sui_input input_req input_er">
+            <div class="input_desc">
+              <span class="input_lbl">username</span>
+              <span class="input_info">username not available</span>
+            </div>
+            <input type="text" value="rohit"/>
+          </div>
+
+          <!-- Input with success message -->
+          <div class="sui_input input_req input_ss">
+            <div class="input_desc">
+              <span class="input_lbl">username</span>
+              <span class="input_info">username is available</span>
+            </div>
+            <input type="text" value="iRohitGaur" />
+          </div>
+        </script>
+      </div>
+      <!-- Input with validation END -->
+
+      <!-- Input with Icon START -->
+      <h2 class="sui_doc_subtitle">Input with Icon</h2>
+      <p class="sui_doc_p">similar to the default input, with an icon</p>
+      <div class="sui_input_wrapper">
+        <!-- Input with error message -->
+        <div class="sui_input input_icon">
+          <div class="input_desc">
+            <span class="input_lbl">search</span>
+            <span class="input_info"></span>
+          </div>
+          <input type="text" />
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_input input_icon">
+            <div class="input_desc">
+              <span class="input_lbl">search</span>
+              <span class="input_info"></span>
+            </div>
+            <input type="text" />
+            <i class="fas fa-search"></i>
+          </div>
+        </script>
+      </div>
+      <!-- Input with Icon END -->
+
+      <!-- Text Area START -->
+      <h2 class="sui_doc_subtitle">Text Area</h2>
+      <p class="sui_doc_p">
+        all the styles from input can also be applied to text area.
+      </p>
+      <div class="sui_input_wrapper">
+        <div class="sui_input input_ta input_er">
+          <div class="input_desc">
+            <span class="input_lbl">comment</span>
+            <span class="input_info">Oops! cannot post an empty comment</span>
+          </div>
+          <textarea type="text"></textarea>
+        </div>
+      </div>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_input input_ta input_er">
+            <div class="input_desc">
+              <span class="input_lbl">comment</span>
+              <span class="input_info">Oops! cannot post an empty comment</span>
+            </div>
+            <textarea type="text"></textarea>
+          </div>
+        </script>
+      </div>
+      <!-- Text Area END -->
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+    <script src="./card.js"></script>
+  </body>
+</html>

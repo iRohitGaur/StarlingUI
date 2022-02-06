@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Image - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="/utils/color.css" />
+    <link rel="stylesheet" href="./image.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <!-- Image Intro START -->
+      <h1>Image</h1>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Image component in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/image/image.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/image/image.css">
+        </script>
+      </div>
+      <!-- Card Intro END -->
+
+      <!-- Responsive Image START -->
+      <h2 class="sui_doc_subtitle">Responsive Image</h2>
+      <p class="sui_doc_p">
+        by default, a SUI image fills in and takes 100% width of its container.
+        Add <b>img_fit</b> class to show the entire image.
+      </p>
+      <p class="sui_doc_p">
+        The demo below shows an image of 600 x 400px in both variants.
+      </p>
+      <div class="sui_img_wrapper">
+        <div class="sui_img">
+          <img src="https://picsum.photos/600/400" alt="" />
+        </div>
+
+        <div class="sui_img img_fit">
+          <img src="https://picsum.photos/600/400" alt="" />
+        </div>
+      </div>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_img">
+            <img src=".." alt=".." />
+          </div>
+
+          <div class="sui_img img_fit">
+            <img src=".." alt=".." />
+          </div>
+        </script>
+      </div>
+      <!-- Responsive Image END -->
+
+      <!-- Round Image START -->
+      <h2 class="sui_doc_subtitle">Round Image</h2>
+      <p class="sui_doc_p">similar to responsive image, in round shape</p>
+      <p class="sui_doc_p">
+        The demo below shows an image of 800 x 400px and 400 x 400px
+        respectively.
+      </p>
+      <div class="sui_img_wrapper">
+        <div class="sui_img img_rnd">
+          <img src="https://picsum.photos/800/400" alt="" />
+        </div>
+
+        <div class="sui_img img_rnd">
+          <img src="https://picsum.photos/400/400" alt="" />
+        </div>
+      </div>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_img img_rnd">
+            <img src=".." alt=".." />
+          </div>
+        </script>
+      </div>
+      <!-- Round Image END -->
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+    <script src="./card.js"></script>
+  </body>
+</html>
