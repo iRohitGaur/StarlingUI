@@ -22,13 +22,11 @@
   color: var(--BG);
   font-size: 1.2rem;
   position: absolute;
+  font-weight: 600;
   top: -10px;
-  right: -5px;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+  left: 1.8rem;
+  border-radius: 8px;
+  padding: 0 5px;
 }
 .av_square .av_badge {
   border-radius: 10px;
