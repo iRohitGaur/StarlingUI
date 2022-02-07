@@ -8,10 +8,12 @@ img.src = "/assets/starling.svg";
 img.alt = "Starling";
 logoWrapper.appendChild(h1);
 logoWrapper.appendChild(img);
+logoWrapper.style = "cursor: pointer";
+logoWrapper.addEventListener("click", () => (window.location = "/"));
 header.appendChild(logoWrapper);
 const ctaWrapper = document.createElement("div");
 const ih =
-  '<button id="burger" class="sui_btn btn_icon_fa"><i class="fas fa-bars"></i></button>';
+  '<button id="github" class="sui_btn btn_icon_fa"><i class="fab fa-github"></i></button><button id="burger" class="sui_btn btn_icon_fa"><i class="fas fa-bars"></i></button>';
 ctaWrapper.innerHTML = ih;
 header.appendChild(ctaWrapper);
 
@@ -81,3 +83,10 @@ function toggleBurger() {
     ? burger.classList.remove("collapsed")
     : burger.classList.add("collapsed");
 }
+
+document
+  .querySelector("#github")
+  .addEventListener(
+    "click",
+    () => (window.location = "https://github.com/iRohitGaur/StarlingUI")
+  );

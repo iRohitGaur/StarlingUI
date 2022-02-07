@@ -1,1 +1,62 @@
-@import url("/core.css");
+body {
+  background: var(--PRIMARY-BG);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10rem;
+  margin: auto;
+}
+.sui_brand {
+  font-size: 10rem;
+  font-weight: 700;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sui_brand img {
+  height: 12rem;
+  transition: transform 0.2s ease-out;
+  z-index: 2;
+}
+#sui_brand_text {
+  color: var(--PRIMARY-M3);
+  transition: transform 0.2s ease-out;
+  animation: changeText 2s ease-in-out infinite alternate;
+}
+.sui_cta {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.sui_cta button {
+  font-size: 3rem;
+}
+@keyframes changeText {
+  0% {
+    content: "Starling UI";
+  }
+  50% {
+    color: var(--PRIMARY);
+  }
+  100% {
+    content: "U";
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sui_brand {
+    font-size: 4rem;
+    gap: 1rem;
+  }
+  .sui_brand img {
+    height: 4rem;
+  }
+  .sui_cta {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 3rem;
+  }
+  .sui_cta button {
+    font-size: 2rem;
+  }
+}

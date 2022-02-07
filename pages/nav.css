@@ -100,8 +100,14 @@ main {
   left: 0;
   position: absolute;
 }
+#github i {
+  font-size: 3rem;
+}
 
 @media only screen and (max-width: 768px) {
+  header {
+    padding: 0 3rem;
+  }
   body {
     grid-template-areas:
       "header"
@@ -133,5 +139,8 @@ main {
 @media only screen and (max-width: 480px) {
   :root {
     font-size: 8px;
+  }
+  header {
+    padding: 0 2rem;
   }
 }
