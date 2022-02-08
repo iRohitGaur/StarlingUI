@@ -1,0 +1,49 @@
+.sui_nav {
+  padding: 0 4rem;
+  height: 6rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 100%;
+  margin: auto;
+}
+.sui_logo_wrapper {
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-right: auto;
+}
+.sui_logo {
+  width: 4rem;
+  height: auto;
+}
+.sui_logo_text {
+  line-height: 1;
+}
+.sui_logo_caption {
+  font-size: 1rem;
+  color: var(--PRIMARY-M1);
+}
+.input_icon .fas {
+  top: 1.2rem;
+}
+.sui_input_lbl {
+  background: var(--BG);
+}
+.sui_search {
+  width: 80%;
+}
+.sui_cta {
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3rem;
+  margin-left: auto;
+}
+.bd_num {
+  left: 1.5rem;
+}
+.sui_search .sui_input input {
+  padding: 6px 15px 4px 15px;
+  padding-left: 3.6rem;
+}

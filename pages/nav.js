@@ -30,6 +30,7 @@ const components = [
   "Image",
   "Input",
   "Lists",
+  "Navigation",
 ];
 createNavElement("Get Started", false, true);
 getStarted.forEach((item) => createNavElement(item, false, false));
