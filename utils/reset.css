@@ -2,6 +2,15 @@
   font-size: 62.5%;
   height: 100vh;
 }
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--PRIMARY-M1);
+  border-radius: 5px;
+}
 /* Box sizing rules */
 *,
 *::before,
@@ -15,6 +24,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 figure,
 blockquote,
