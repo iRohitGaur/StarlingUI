@@ -1,0 +1,37 @@
+.sui_modal_wrapper {
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--BLACK-C);
+  display: none;
+}
+.sui_modal_container {
+  box-shadow: 0 0 4px 0 var(--BLACK-BG);
+  background: vaR(--BG);
+  border-radius: 8px;
+  position: relative;
+  max-width: 60vw;
+  margin: auto;
+}
+.sui_modal_container .fas {
+  padding: 1rem 1rem 0 0;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.sui_modal_title {
+  text-align: center;
+  padding: 1rem 0 0 0;
+}
+.sui_modal_text {
+  padding: 0 2rem 2rem 2rem;
+  text-align: justify;
+}
+.sui_modal_wrapper.visible {
+  display: grid;
+  place-content: center;
+}

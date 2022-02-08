@@ -31,6 +31,7 @@ const components = [
   "Input",
   "Lists",
   "Navigation",
+  "Modal",
 ];
 createNavElement("Get Started", false, true);
 getStarted.forEach((item) => createNavElement(item, false, false));

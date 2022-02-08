@@ -249,3 +249,7 @@ pre b {
   box-shadow: 0 0 2px 0 var(--BLACK-BG);
   margin-top: 1rem;
 }
+.sui_show_modal_btn_wrapper {
+  margin: 2rem 0 0 0;
+  justify-content: center;
+}

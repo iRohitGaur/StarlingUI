@@ -65,8 +65,7 @@ nav::-webkit-scrollbar {
 }
 main {
   grid-area: main;
-  margin: 4rem 0;
-  padding: 0 5%;
+  padding: 4rem 5%;
   overflow-y: scroll;
   overflow-x: hidden;
   position: relative;
