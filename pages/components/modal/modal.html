@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Modal - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="modal.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Modal</h1>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Modal in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/modal/modal.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/modal/modal.css">
+        </script>
+      </div>
+
+      <!-- Modal START -->
+      <h2 class="sui_doc_subtitle">Simple Modal</h2>
+      <p class="sui_doc_p">
+        is like a pop-up to gain user attention and confirm a CTA. Click on the
+        button below to see it in action:
+      </p>
+      <div class="sui_show_modal_btn_wrapper flex_rw">
+        <button id="sui-show-modal" class="sui_btn">Show Modal</button>
+      </div>
+      <div id="sui-modal" class="sui_modal_wrapper">
+        <div class="sui_modal_container">
+          <button class="btn_icon_fa">
+            <i class="fas fa-times" id="sui-close-modal"></i>
+          </button>
+          <div class="sui_modal_title h3 fw6">This is Modal Title</div>
+          <div class="sui_modal_text h5 fw5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </div>
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <div id="sui-modal" class="sui_modal_wrapper">
+            <div class="sui_modal_container">
+              <button class="btn_icon_fa">
+                <i class="fas fa-times" id="sui-close-modal"></i>
+              </button>
+              <div class="sui_modal_title h3 fw6">This is Modal Title</div>
+              <div class="sui_modal_text h5 fw5">Lorem ipsum..</div>
+            </div>
+          </div>
+        </script>
+        <script type="text/plain" class="line-numbers language-javascript">
+          // JavaScript
+          const showBtn = document.querySelector("#sui-show-modal");
+          const closeBtn = document.querySelector("#sui-close-modal");
+          const modal = document.querySelector("#sui-modal");
+          showBtn.addEventListener("click", () => {
+            modal.classList.add("visible");
+          });
+          closeBtn.addEventListener("click", () => {
+            modal.classList.remove("visible");
+          });
+        </script>
+      </div>
+      <!-- Modal END -->
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>
