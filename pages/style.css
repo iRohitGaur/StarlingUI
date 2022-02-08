@@ -245,3 +245,7 @@ pre b {
   margin-top: 2rem;
   justify-content: space-between;
 }
+.sui_nav_wrapper {
+  box-shadow: 0 0 2px 0 var(--BLACK-BG);
+  margin-top: 1rem;
+}

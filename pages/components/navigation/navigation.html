@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Navigation - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="/pages/components/badge/badge.css" />
+    <link rel="stylesheet" href="/pages/components/input/input.css" />
+    <link rel="stylesheet" href="/pages/components/navigation/navigation.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Navigation</h1>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Navigation in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/badge/badge.css");
+          @import url("https://starlingui.netlify.app/pages/components/input/input.css");
+          @import url("https://starlingui.netlify.app/pages/components/navigation/navigation.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/badge/badge.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/input/input.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/navigation/navigation.css">
+        </script>
+      </div>
+
+      <!-- Navigation START -->
+      <h2 class="sui_doc_subtitle">Simple Navigation Bar</h2>
+      <p class="sui_doc_p">
+        appears at the top of an app screen and enables navigation to different
+        screens:
+      </p>
+      <div class="sui_nav_wrapper">
+        <div class="sui_nav">
+          <div class="sui_logo_wrapper flex_rw">
+            <img class="sui_logo" src="/assets/starling.svg" alt="" />
+            <div class="flex_cl">
+              <span class="sui_logo_text">Title</span>
+              <span class="sui_logo_caption">Tagline here</span>
+            </div>
+          </div>
+
+          <div class="sui_search">
+            <div class="sui_input input_icon">
+              <div class="input_desc">
+                <span class="sui_input_lbl">search</span>
+                <span class="sui_input_info"></span>
+              </div>
+              <input type="text" />
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+          <div class="sui_cta flex_rw">
+            <button class="btn_icon_fa">
+              <div class="sui_avatar">
+                <i class="far fa-heart"></i>
+                <div class="bd_num bd_red">88</div>
+              </div>
+            </button>
+            <button class="btn_icon_fa">
+              <div class="sui_avatar">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="bd_num bd_red">0</div>
+              </div>
+            </button>
+            <button class="sui_btn" id="login">Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <div class="sui_nav">
+            <!-- Logo & Title -->
+            <div class="sui_logo_wrapper flex_rw">
+              <img class="sui_logo" src="/assets/starling.svg" alt="" />
+              <div class="flex_cl">
+                <span class="sui_logo_text">Title</span>
+                <span class="sui_logo_caption">Tagline here</span>
+              </div>
+            </div>
+            <!-- Search bar -->
+            <div class="sui_search">
+              <div class="sui_input input_icon">
+                <div class="input_desc">
+                  <span class="sui_input_lbl">search</span>
+                  <span class="sui_input_info"></span>
+                </div>
+                <input type="text" />
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <!-- CTA -->
+            <div class="sui_cta flex_rw">
+              <!-- Favorites Button -->
+              <button class="btn_icon_fa">
+                <div class="sui_avatar">
+                  <i class="far fa-heart"></i>
+                  <div class="bd_num bd_red">88</div>
+                </div>
+              </button>
+              <!-- Cart Button -->
+              <button class="btn_icon_fa">
+                <div class="sui_avatar">
+                  <i class="fas fa-shopping-cart"></i>
+                  <div class="bd_num bd_red">0</div>
+                </div>
+              </button>
+              <!-- Login Button -->
+              <button class="sui_btn" id="login">Login</button>
+            </div>
+          </div>
+        </script>
+      </div>
+      <!-- Navigation END -->
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+  </body>
+</html>
