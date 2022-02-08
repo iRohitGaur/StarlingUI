@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Lists - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="/pages/components/lists/lists.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Lists</h1>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Lists in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/lists/lists.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/lists/lists.css">
+        </script>
+      </div>
+
+      <!-- Simple Lists START -->
+      <h2 class="sui_doc_subtitle">Simple Lists</h2>
+      <p class="sui_doc_p">have 4 different color variants:</p>
+      <div class="list_wrapper flex_rw flex_wp flex_g2">
+        <ul class="sui_ul">
+          <div class="sui_ul_title h4 sui_color_text_p">Categories</div>
+          <li class="h5 sui_li_p">T-Shirts</li>
+          <li class="h5 sui_li_p">Stickers</li>
+          <li class="h5 sui_li_p">Hoodies</li>
+        </ul>
+        <ul class="sui_ul">
+          <div class="sui_ul_title h4 sui_color_text_v1">Categories</div>
+          <li class="h5 sui_li_v1">T-Shirts</li>
+          <li class="h5 sui_li_v1">Stickers</li>
+          <li class="h5 sui_li_v1">Hoodies</li>
+        </ul>
+        <ul class="sui_ul">
+          <div class="sui_ul_title h4 sui_color_text_v2">Categories</div>
+          <li class="h5 sui_li_v2">T-Shirts</li>
+          <li class="h5 sui_li_v2">Stickers</li>
+          <li class="h5 sui_li_v2">Hoodies</li>
+        </ul>
+        <ul class="sui_ul">
+          <div class="sui_ul_title h4 sui_color_text_v3">Categories</div>
+          <li class="h5 sui_li_v3">T-Shirts</li>
+          <li class="h5 sui_li_v3">Stickers</li>
+          <li class="h5 sui_li_v3">Hoodies</li>
+        </ul>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <ul class="sui_ul">
+            <!--  .sui_color_text_p   .sui_color_text_v1   .sui_color_text_v2   .sui_color_text_v3  -->
+            <!-- use any of the above mentioned class to get color on the title -->
+            <div class="sui_ul_title h4 sui_color_text_p">Categories</div>
+            <li class="h5 sui_li_p">T-Shirts</li>
+            <li class="h5 sui_li_p">Stickers</li>
+            <li class="h5 sui_li_p">Hoodies</li>
+            <!-- use any of the below mentioned class to get the color on a list on hover -->
+            <!--  .sui_li_p   .sui_li_v1   .sui_li_v2   .sui_li_v3  -->
+          </ul>
+        </script>
+      </div>
+      <!-- Simple Lists END -->
+
+      <!-- Stacked / Notification Lists START -->
+      <h2 class="sui_doc_subtitle">Stacked / Notification Lists</h2>
+      <p class="sui_doc_p">
+        are lists stacked on top of each other in notification format:
+      </p>
+      <div class="list_wrapper flex_rw flex_wp flex_g2">
+        <ul class="sui_ul sui_ul_stacked">
+          <li class="h5 sui_li_stacked">This is Notification 1</li>
+          <li class="h5 sui_li_stacked">This is Notification 2</li>
+          <li class="h5 sui_li_stacked">This is Notification 3</li>
+        </ul>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <ul class="sui_ul sui_ul_stacked">
+            <li class="h5 sui_li_stacked">This is Notification 1</li>
+            <li class="h5 sui_li_stacked">This is Notification 2</li>
+            <li class="h5 sui_li_stacked">This is Notification 3</li>
+          </ul>
+        </script>
+      </div>
+      <!-- Stacked / Notification Lists END -->
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+  </body>
+</html>

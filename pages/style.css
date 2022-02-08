@@ -211,3 +211,37 @@ pre b {
   flex-direction: column;
   gap: 2rem;
 }
+.typography_reset span {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.typography_reset h1 {
+  font-size: 4.8rem;
+}
+.typography_reset h2 {
+  font-size: 3.2rem;
+}
+.typography_reset h3 {
+  font-size: 2.4rem;
+}
+.typography_reset h4 {
+  font-size: 2rem;
+}
+.typography_reset h5 {
+  font-size: 1.6rem;
+}
+.typography_reset p {
+  font-size: 1.2rem;
+}
+.typography_wrapper {
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.font_weight {
+  margin: 1rem 0;
+  gap: 1rem;
+}
+.list_wrapper {
+  margin-top: 2rem;
+  justify-content: space-between;
+}
