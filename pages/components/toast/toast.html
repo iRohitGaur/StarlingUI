@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Toast - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="/utils/color.css" />
+    <link rel="stylesheet" href="toast.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Toast</h1>
+      <p class="sui_doc_p">
+        provides brief notifications. The component is also known as Snackbar.
+      </p>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Alert component in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/toast/toast.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/toast/toast.css">
+        </script>
+      </div>
+
+      <h2 class="sui_doc_subtitle">Simple Toast</h2>
+      <p class="sui_doc_p">
+        has 4 different colors. Click on the buttons below for demo:
+      </p>
+      <div class="sui_btn_wrapper">
+        <button id="sui-toast-btn" class="sui_btn">Standard Toast</button>
+        <button id="sui-toast-btn-v1" class="sui_btn btn_v1">
+          Danger Toast
+        </button>
+        <button id="sui-toast-btn-v2" class="sui_btn btn_v2">
+          Success Toast
+        </button>
+        <button id="sui-toast-btn-v3" class="sui_btn btn_v3">
+          Warning Toast
+        </button>
+      </div>
+      <div class="sui_toast_wrapper">
+        <div id="toast-std" class="sui_toast sui_toast_info">
+          <i class="fas fa-info-circle"></i>
+          informative Toast with close button
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div id="toast-v1" class="sui_toast sui_toast_danger">
+          <i class="fas fa-exclamation-triangle"></i>
+          danger Toast with a close button
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div id="toast-v2" class="sui_toast sui_toast_success">
+          <i class="fas fa-check-circle"></i>
+          success Toast with a close button
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div id="toast-v3" class="sui_toast sui_toast_warning">
+          <i class="fas fa-exclamation-circle"></i>
+          warning Toast with a close button
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Standard Toast -->
+          <div id="toast-std" class="sui_toast sui_toast_info">
+            <i class="fas fa-info-circle"></i>
+            informative Toast with close button
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- Danger Toast -->
+          <div id="toast-v1" class="sui_toast sui_toast_danger">
+            <i class="fas fa-exclamation-triangle"></i>
+            danger Toast with a close button
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- Success Toast -->
+          <div id="toast-v2" class="sui_toast sui_toast_success">
+            <i class="fas fa-check-circle"></i>
+            success Toast with a close button
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- Warning Toast -->
+          <div id="toast-v3" class="sui_toast sui_toast_warning">
+            <i class="fas fa-exclamation-circle"></i>
+            warning Toast with a close button
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </script>
+      </div>
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+    <script src="toast.js"></script>
+  </body>
+</html>

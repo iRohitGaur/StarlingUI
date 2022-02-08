@@ -1,0 +1,54 @@
+.sui_toast {
+  border-radius: 8px;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+  gap: 1rem;
+  font-weight: 500;
+  border: 1px solid var(--SHADE2);
+}
+.sui_toast .fas {
+  font-size: 2.5rem;
+}
+.sui_toast .fa-times {
+  font-size: 2rem;
+}
+.sui_toast .btn_icon_fa {
+  color: revert;
+}
+.sui_toast_info {
+  color: var(--BG);
+  background: var(--PRIMARY-M3);
+}
+.sui_toast_info,
+.sui_toast_info i {
+  color: var(--PRIMARY-P1);
+}
+
+.sui_toast_danger {
+  background: var(--VARIANT-1M1);
+}
+.sui_toast_danger,
+.sui_toast_danger i {
+  color: var(--VARIANT-1-TXT-BG);
+}
+
+.sui_toast_success {
+  background: var(--VARIANT-2);
+}
+.sui_toast_success,
+.sui_toast_success i {
+  color: var(--VARIANT-2-TXT-BG);
+}
+
+.sui_toast_warning {
+  background: var(--VARIANT-3BG);
+}
+.sui_toast_warning,
+.sui_toast_warning i {
+  color: var(--VARIANT-3-TXT-BG);
+}
