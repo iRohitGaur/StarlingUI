@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Grid - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="grid.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Grid</h1>
+      <p class="sui_doc_p">
+        creates visual consistency between layouts while allowing flexibility
+        across a wide variety of designs. Starling UI is based on a 12-column
+        responsive grid layout.
+      </p>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Grid component in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/grid/grid.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/grid/grid.css">
+        </script>
+      </div>
+
+      <!-- Horizontal Grid START -->
+      <h2 class="sui_doc_subtitle">Horizontal Grid system</h2>
+      <p class="sui_doc_p">can be used for 1x1 to 12x12 horizontal grids</p>
+      <div class="sui_grid_wrapper">
+        <div class="sui_grid grid_h12">
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+        </div>
+        <div class="sui_grid grid_h11">
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+        </div>
+        <div class="sui_grid grid_h10">
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+        </div>
+        <div class="sui_grid grid_h9">
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+        </div>
+        <div class="sui_grid grid_h8">
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+        </div>
+        <div class="sui_grid grid_h7">
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+        </div>
+        <div class="sui_grid grid_h6">
+          <div>g=6</div>
+          <div>g=6</div>
+          <div>g=6</div>
+          <div>g=6</div>
+          <div>g=6</div>
+          <div>g=6</div>
+        </div>
+        <div class="sui_grid grid_h5">
+          <div>g=5</div>
+          <div>g=5</div>
+          <div>g=5</div>
+          <div>g=5</div>
+          <div>g=5</div>
+        </div>
+        <div class="sui_grid grid_h4">
+          <div>g=4</div>
+          <div>g=4</div>
+          <div>g=4</div>
+          <div>g=4</div>
+        </div>
+        <div class="sui_grid grid_h3">
+          <div>g=3</div>
+          <div>g=3</div>
+          <div>g=3</div>
+        </div>
+        <div class="sui_grid grid_h2">
+          <div>g=2</div>
+          <div>g=2</div>
+        </div>
+        <div class="sui_grid">
+          <div>g=1</div>
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_grid grid_h6">
+            <div>g=6</div>
+            <div>g=6</div>
+            <div>g=6</div>
+            <div>g=6</div>
+            <div>g=6</div>
+            <div>g=6</div>
+          </div>
+        </script>
+      </div>
+      <!-- Horizontal Grid END -->
+
+      <!-- Vertical Grid START -->
+      <h2 class="sui_doc_subtitle">Vertical Grid system</h2>
+      <p class="sui_doc_p">can be used for 1x1 to 12x12 vertical grids</p>
+      <div class="sui_grid_wrapper sui_grid_wrapper_vertical">
+        <div class="sui_grid grid_v12">
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+          <div>g=12</div>
+        </div>
+        <div class="sui_grid grid_v11">
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+          <div>g=11</div>
+        </div>
+        <div class="sui_grid grid_v10">
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+          <div>g=10</div>
+        </div>
+        <div class="sui_grid grid_v9">
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+          <div>g=9</div>
+        </div>
+        <div class="sui_grid grid_v8">
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+          <div>g=8</div>
+        </div>
+        <div class="sui_grid grid_v7">
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+          <div>g=7</div>
+        </div>
+        <div class="sui_grid grid_v6">
+          <div>g=6</div>
+          <div>g=6</div>
+          <div>g=6</div>
+          <div>g=6</div>
+          <div>g=6</div>
+          <div>g=6</div>
+        </div>
+        <div class="sui_grid grid_v5">
+          <div>g=5</div>
+          <div>g=5</div>
+          <div>g=5</div>
+          <div>g=5</div>
+          <div>g=5</div>
+        </div>
+        <div class="sui_grid grid_v4">
+          <div>g=4</div>
+          <div>g=4</div>
+          <div>g=4</div>
+          <div>g=4</div>
+        </div>
+        <div class="sui_grid grid_v3">
+          <div>g=3</div>
+          <div>g=3</div>
+          <div>g=3</div>
+        </div>
+        <div class="sui_grid grid_v2">
+          <div>g=2</div>
+          <div>g=2</div>
+        </div>
+        <div class="sui_grid">
+          <div>g=1</div>
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <div class="sui_grid grid_v6">
+            <div>g=6</div>
+            <div>g=6</div>
+            <div>g=6</div>
+            <div>g=6</div>
+            <div>g=6</div>
+            <div>g=6</div>
+          </div>
+        </script>
+      </div>
+      <!-- Vertical Grid END -->
+
+      <!-- Flexible Grid START -->
+      <h2 class="sui_doc_subtitle">Flexible Grid system</h2>
+      <p class="sui_doc_p">
+        uses a 12-column responsive grid layout. You can use any number of items
+        inside the grid with a total width-span of 12:
+      </p>
+      <div class="sui_grid_wrapper">
+        <div class="sui_grid grid_flexible">
+          <div class="grid_width8">Item 1 (g=8)</div>
+          <div class="grid_width4">Item 2 (g=4)</div>
+        </div>
+        <div class="sui_grid grid_flexible">
+          <div class="grid_width6">Item 1 (g=6)</div>
+          <div class="grid_width6">Item 2 (g=6)</div>
+        </div>
+        <div class="sui_grid grid_flexible">
+          <div class="grid_width3">Item 1 (g=3)</div>
+          <div class="grid_width9">Item 2 (g=9)</div>
+        </div>
+        <br />
+        <!-- FOR PRESENTATION PURPOSE: SPACING BETWEEN GRIDS -->
+        <div class="sui_grid grid_flexible">
+          <div class="grid_width4">Item 1 (g=4)</div>
+          <div class="grid_width4">Item 2 (g=4)</div>
+          <div class="grid_width4">Item 3 (g=4)</div>
+        </div>
+        <div class="sui_grid grid_flexible">
+          <div class="grid_width3">Item 1 (g=3)</div>
+          <div class="grid_width6">Item 2 (g=6)</div>
+          <div class="grid_width3">Item 3 (g=3)</div>
+        </div>
+        <div class="sui_grid grid_flexible">
+          <div class="grid_width4">Item 1 (g=4)</div>
+          <div class="grid_width6">Item 2 (g=6)</div>
+          <div class="grid_width2">Item 3 (g=2)</div>
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- two items in a grid -->
+          <div class="sui_grid grid_flexible">
+            <div class="grid_width8">g=8</div>
+            <div class="grid_width4">g=4</div>
+          </div>
+          <div class="sui_grid grid_flexible">
+            <div class="grid_width6">g=6</div>
+            <div class="grid_width6">g=6</div>
+          </div>
+          <div class="sui_grid grid_flexible">
+            <div class="grid_width3">g=3</div>
+            <div class="grid_width9">g=9</div>
+          </div>
+        </script>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- three items in a grid -->
+          <div class="sui_grid grid_flexible">
+            <div class="grid_width4">g=4</div>
+            <div class="grid_width4">g=4</div>
+            <div class="grid_width4">g=4</div>
+          </div>
+          <div class="sui_grid grid_flexible">
+            <div class="grid_width3">g=3</div>
+            <div class="grid_width6">g=6</div>
+            <div class="grid_width3">g=3</div>
+          </div>
+          <div class="sui_grid grid_flexible">
+            <div class="grid_width4">g=4</div>
+            <div class="grid_width6">g=6</div>
+            <div class="grid_width2">g=2</div>
+          </div>
+        </script>
+      </div>
+      <!-- Flexible Grid END -->
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+  </body>
+</html>

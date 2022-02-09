@@ -7,3 +7,8 @@
 @import url("/pages/components/card/card.css");
 @import url("/pages/components/image/image.css");
 @import url("/pages/components/input/input.css");
+@import url("/pages/components/lists/lists.css");
+@import url("/pages/components/navigation/navigation.css");
+@import url("/pages/components/modal/modal.css");
+@import url("/pages/components/rating/rating.css");
+@import url("/pages/components/toast/toast.css");
