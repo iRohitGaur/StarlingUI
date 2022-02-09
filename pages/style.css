@@ -263,10 +263,13 @@ pre b {
   display: grid;
   place-content: center;
   position: fixed;
-  bottom: 5rem;
+  bottom: -10rem;
   left: 0;
   z-index: 2;
   width: 100vw;
+}
+.sui_toast_wrapper.show {
+  bottom: 5rem;
 }
 #toast-std,
 #toast-v1,
