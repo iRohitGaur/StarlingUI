@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Rating - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="rating.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Rating</h1>
+      <p class="sui_doc_p">
+        provides insight regarding others' opinions and experiences, and can
+        allow the user to submit a rating of their own.
+      </p>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Rating in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/rating/rating.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/rating/rating.css">
+        </script>
+      </div>
+
+      <!-- Standard Rating START -->
+      <h2 class="sui_doc_subtitle">Standard Rating</h2>
+      <p class="sui_doc_p">has 4 different color variants:</p>
+      <div class="sui_rating_wrapper flex_rw flex_wp flex_g2">
+        <div class="sui_rating">
+          <i class="fas fa-star starred"></i>
+          <i class="fas fa-star starred"></i>
+          <i class="fas fa-star starred"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="sui_rating_v1">
+          <i class="fas fa-feather starred"></i>
+          <i class="fas fa-feather starred"></i>
+          <i class="fas fa-feather starred"></i>
+          <i class="fas fa-feather"></i>
+          <i class="fas fa-feather"></i>
+        </div>
+        <div class="sui_rating_v2">
+          <i class="fas fa-leaf starred"></i>
+          <i class="fas fa-leaf starred"></i>
+          <i class="fas fa-leaf starred"></i>
+          <i class="fas fa-leaf"></i>
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="sui_rating_v3">
+          <i class="fas fa-tshirt starred"></i>
+          <i class="fas fa-tshirt starred"></i>
+          <i class="fas fa-tshirt starred"></i>
+          <i class="fas fa-tshirt"></i>
+          <i class="fas fa-tshirt"></i>
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <div class="sui_rating">
+            <!-- You can use any "fas fa-icon" here -->
+            <i class="fas fa-star starred"></i>
+            <i class="fas fa-star starred"></i>
+            <i class="fas fa-star starred"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          <!-- You can also use:   "sui_rating_v2"  or  "sui_rating_v3" to change the color -->
+          <div class="sui_rating_v1">
+            <i class="fas fa-feather starred"></i>
+            <i class="fas fa-feather starred"></i>
+            <i class="fas fa-feather starred"></i>
+            <i class="fas fa-feather"></i>
+            <i class="fas fa-feather"></i>
+          </div>
+        </script>
+      </div>
+      <!-- Standard Rating END -->
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+  </body>
+</html>
