@@ -23,7 +23,6 @@
     />
     <title>Starling UI - Toast - Rohit Gaur</title>
     <link rel="stylesheet" href="/pages/style.css" />
-    <link rel="stylesheet" href="/utils/color.css" />
     <link rel="stylesheet" href="toast.css" />
   </head>
   <body>
@@ -38,18 +37,20 @@
         Note: I have set the root font-size to 10px for this library.
       </p>
       <p class="sui_doc_p">
-        Instructions to import the Alert component in your CSS or HTML:
+        Instructions to import the Toast component in your CSS or HTML:
       </p>
 
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-css">
           // CSS
           @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/button/button.css");
           @import url("https://starlingui.netlify.app/pages/components/toast/toast.css");
         </script>
         <script type="text/plain" class="line-numbers language-html">
           // HTML
           <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/button/button.css">
           <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/toast/toast.css">
         </script>
       </div>
@@ -103,7 +104,7 @@
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
           <!-- Standard Toast -->
-          <div id="toast-std" class="sui_toast sui_toast_info">
+          <div class="sui_toast sui_toast_info">
             <i class="fas fa-info-circle"></i>
             informative Toast with close button
             <button class="btn_icon_fa">
@@ -111,7 +112,7 @@
             </button>
           </div>
           <!-- Danger Toast -->
-          <div id="toast-v1" class="sui_toast sui_toast_danger">
+          <div class="sui_toast sui_toast_danger">
             <i class="fas fa-exclamation-triangle"></i>
             danger Toast with a close button
             <button class="btn_icon_fa">
@@ -119,7 +120,7 @@
             </button>
           </div>
           <!-- Success Toast -->
-          <div id="toast-v2" class="sui_toast sui_toast_success">
+          <div class="sui_toast sui_toast_success">
             <i class="fas fa-check-circle"></i>
             success Toast with a close button
             <button class="btn_icon_fa">
@@ -127,7 +128,7 @@
             </button>
           </div>
           <!-- Warning Toast -->
-          <div id="toast-v3" class="sui_toast sui_toast_warning">
+          <div class="sui_toast sui_toast_warning">
             <i class="fas fa-exclamation-circle"></i>
             warning Toast with a close button
             <button class="btn_icon_fa">
