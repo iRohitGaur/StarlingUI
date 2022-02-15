@@ -107,7 +107,8 @@ main {
   left: 0;
   position: absolute;
 }
-#github i {
+#github i,
+#twitter i {
   font-size: 3rem;
 }
 

@@ -13,7 +13,7 @@ logoWrapper.addEventListener("click", () => (window.location = "/"));
 header.appendChild(logoWrapper);
 const ctaWrapper = document.createElement("div");
 const ih =
-  '<button id="github" class="sui_btn btn_icon_fa"><i class="fab fa-github"></i></button><button id="burger" class="sui_btn btn_icon_fa"><i class="fas fa-bars"></i></button>';
+  '<button id="github" class="sui_btn btn_icon_fa"><i class="fab fa-github"></i></button><button id="twitter" class="sui_btn btn_icon_fa"><i class="fab fa-twitter"></i></button><button id="burger" class="sui_btn btn_icon_fa"><i class="fas fa-bars"></i></button>';
 ctaWrapper.innerHTML = ih;
 header.appendChild(ctaWrapper);
 
@@ -92,7 +92,19 @@ function toggleBurger() {
 
 document
   .querySelector("#github")
-  .addEventListener(
-    "click",
-    () => (window.location = "https://github.com/iRohitGaur/StarlingUI")
+  .addEventListener("click", () =>
+    window.open(
+      "https://github.com/iRohitGaur/StarlingUI",
+      "_blank",
+      "noopener,noreferrer"
+    )
+  );
+document
+  .querySelector("#twitter")
+  .addEventListener("click", () =>
+    window.open(
+      "https://twitter.com/iRohitGaur",
+      "_blank",
+      "noopener,noreferrer"
+    )
   );

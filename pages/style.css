@@ -14,15 +14,17 @@ main h1 {
   font-size: 4rem;
 }
 #rem_notice {
-  padding-top: 2rem;
+  margin: 1rem 0;
   color: var(--PRIMARY);
   cursor: pointer;
+  width: fit-content;
+  position: relative;
 }
 #rem_notice::after {
   content: "";
   background: var(--PRIMARY-M3);
   position: absolute;
-  top: 5rem;
+  top: -1rem;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
@@ -32,8 +34,9 @@ main h1 {
   padding: 5px 1rem;
   border-radius: 5px;
   position: absolute;
-  top: 3rem;
+  top: -3rem;
   color: var(--BG);
+  width: fit-content;
 }
 /************* Prism JS Highlight CSS override START *****************/
 .code_wrapper {
