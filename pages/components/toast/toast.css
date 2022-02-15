@@ -28,7 +28,6 @@
 .sui_toast_info i {
   color: var(--PRIMARY-P1);
 }
-
 .sui_toast_danger {
   background: var(--VARIANT-1M1);
 }
@@ -36,7 +35,6 @@
 .sui_toast_danger i {
   color: var(--VARIANT-1-TXT-BG);
 }
-
 .sui_toast_success {
   background: var(--VARIANT-2);
 }
@@ -44,7 +42,6 @@
 .sui_toast_success i {
   color: var(--VARIANT-2-TXT-BG);
 }
-
 .sui_toast_warning {
   background: var(--VARIANT-3BG);
 }
