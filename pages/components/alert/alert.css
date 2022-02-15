@@ -8,35 +8,43 @@
   text-align: center;
   cursor: default;
   gap: 1rem;
+  font-weight: 500;
+  border: 1px solid var(--SHADE2);
 }
-.sui_alert img {
-  height: 1.2em;
-  width: 1.2em;
+.sui_alert .fas {
+  font-size: 2.5rem;
 }
-.al_info {
-  color: var(--BG);
+.sui_alert .fa-times {
+  font-size: 2rem;
+}
+.alert_info {
   background: var(--PRIMARY-M3);
 }
-.al_success {
+.alert_info,
+.alert_info i {
+  color: var(--PRIMARY-P1);
+}
+.alert_success {
   background: var(--VARIANT-2);
 }
-.al_warning {
+.alert_success,
+.alert_success i {
+  color: var(--VARIANT-2-TXT-BG);
+}
+.alert_warning {
   background: var(--VARIANT-3);
 }
-.al_danger {
+.alert_warning,
+.alert_warning i {
+  color: var(--VARIANT-3-TXT-BG);
+}
+.alert_danger {
   background: var(--VARIANT-1);
 }
-.al_info .al_close {
+.alert_danger,
+.alert_danger i {
+  color: var(--VARIANT-1-TXT-BG);
+}
+.alert_info .alert_close {
   color: var(--BG);
-}
-.al_close {
-  font-size: 0.8em;
-  background: none;
-  border: 0;
-  opacity: 1;
-  margin-left: 1rem;
-}
-.al_close:hover {
-  opacity: 0.7;
-  cursor: pointer;
 }

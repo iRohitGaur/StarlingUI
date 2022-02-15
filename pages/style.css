@@ -138,8 +138,8 @@ pre b {
 .sui_btn_wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
+  justify-content: space-around;
+  gap: 1rem;
   padding-top: 2rem;
 }
 .sui_btn_float::before {

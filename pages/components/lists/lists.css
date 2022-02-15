@@ -37,14 +37,15 @@
   color: var(--VARIANT-3-TXT-BG);
 }
 .sui_ul_stacked {
-  background: var(--SHADE2);
+  border: 1px solid var(--SHADE2);
   padding: 0;
   width: 100%;
 }
 li.sui_li_stacked {
-  background: var(--WHITE-A);
+  background: var(--PRIMARY-M2);
+  color: var(--WHITE);
   padding: 1rem;
   margin: 1rem;
   border-radius: 4px;
-  border: 1px solid var(--SHADE3);
+  border: 1px solid var(--PRIMARY-M1);
 }

@@ -31,6 +31,10 @@
     <nav></nav>
     <main>
       <h1>Alert</h1>
+      <p class="sui_doc_p">
+        displays a short, important message in a way that attracts the user's
+        attention without interrupting the user's task.
+      </p>
       <p id="rem_notice" class="sui_doc_p">
         Note: I have set the root font-size to 10px for this library.
       </p>
@@ -54,80 +58,151 @@
       <h2 class="sui_doc_subtitle">Simple Alert</h2>
       <p class="sui_doc_p">has 4 types:</p>
       <span>
-        <pre><b class="sui_alert_types al_info">al_info</b></pre>
-        <pre><b class="sui_alert_types al_success">al_success</b></pre>
-        <pre><b class="sui_alert_types al_warning">al_warning</b></pre>
-        <pre><b class="sui_alert_types al_danger">al_danger</b></pre>
+        <pre><b class="sui_alert_types alert_info">alert_info</b></pre>
+        <pre><b class="sui_alert_types alert_success">alert_success</b></pre>
+        <pre><b class="sui_alert_types alert_warning">alert_warning</b></pre>
+        <pre><b class="sui_alert_types alert_danger">alert_danger</b></pre>
       </span>
       <div class="sui_alert_wrapper">
-        <div class="sui_alert al_info">This is a simple info Alert</div>
-        <div class="sui_alert al_success">This is a simple success Alert</div>
-        <div class="sui_alert al_warning">This is a simple warning Alert</div>
-        <div class="sui_alert al_danger">This is a simple danger Alert</div>
+        <div class="sui_alert alert_info">
+          This is a simple info Alert
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="sui_alert alert_success">
+          This is a simple success Alert
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="sui_alert alert_warning">
+          This is a simple warning Alert
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="sui_alert alert_danger">
+          This is a simple danger Alert
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
       </div>
 
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
-          <div class="sui_alert al_info">This is a simple info Alert</div>
-          <div class="sui_alert al_success">This is a simple success Alert</div>
-          <div class="sui_alert al_warning">This is a simple warning Alert</div>
-          <div class="sui_alert al_danger">This is a simple danger Alert</div>
+          <!-- Info Alert -->
+          <div class="sui_alert alert_info">
+            This is a simple info Alert
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </script>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Success Alert -->
+          <div class="sui_alert alert_success">
+            This is a simple success Alert
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </script>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Warning Alert -->
+          <div class="sui_alert alert_warning">
+            This is a simple warning Alert
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </script>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Danger Alert -->
+          <div class="sui_alert alert_danger">
+            This is a simple danger Alert
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
         </script>
       </div>
 
       <h2 class="sui_doc_subtitle">Standard Alert</h2>
-      <p class="sui_doc_p">
-        in addition to the simple alert, it has an icon and close button:
-      </p>
+      <p class="sui_doc_p">in addition to the simple alert, it has an icon:</p>
 
       <div class="sui_alert_wrapper">
-        <div class="sui_alert al_info">
-          <img src="/assets/svg/info.svg" alt="info icon" />
+        <div class="sui_alert alert_info">
+          <i class="fas fa-info-circle"></i>
           info Alert with icon and close button
-          <button class="al_close">&#x2715;</button>
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-        <div class="sui_alert al_success">
-          <img src="/assets/svg/success.svg" alt="success icon" />
+        <div class="sui_alert alert_success">
+          <i class="fas fa-check-circle"></i>
           success Alert with icon and close button
-          <button class="al_close">&#x2715;</button>
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-        <div class="sui_alert al_warning">
-          <img src="/assets/svg/warning.svg" alt="warning icon" />
+        <div class="sui_alert alert_warning">
+          <i class="fas fa-exclamation-circle"></i>
           warning Alert with icon and close button
-          <button class="al_close">&#x2715;</button>
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-        <div class="sui_alert al_danger">
-          <img src="/assets/svg/danger.svg" alt="danger icon" />
+        <div class="sui_alert alert_danger">
+          <i class="fas fa-exclamation-triangle"></i>
           danger Alert with icon and close button
-          <button class="al_close">&#x2715;</button>
+          <button class="btn_icon_fa">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
       </div>
       <div class="code_wrapper">
         <script type="text/plain" class="line-numbers language-markup">
-          <div class="sui_alert al_info">
-            <img src="/assets/svg/info.svg" alt="info icon" />
+          <!-- Info Alert -->
+          <div class="sui_alert alert_info">
+            <i class="fas fa-info-circle"></i>
             <!-- Your alert message comes here.. -->
             info Alert with icon and close button
-            <button class="al_close">&#x2715;</button>
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
           </div>
-
-          <div class="sui_alert al_success">
-            <!-- Default icons are provided, you can change them if you wish -->
-            <img src="/assets/svg/success.svg" alt="success icon" />
+        </script>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Success Alert -->
+          <div class="sui_alert alert_success">
+            <!-- Font Awesome icons are used, you can change them if you wish -->
+            <i class="fas fa-check-circle"></i>
             success Alert with icon and close button
-            <button class="al_close">&#x2715;</button>
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
           </div>
-
-          <div class="sui_alert al_warning">
-            <img src="/assets/svg/warning.svg" alt="warning icon" />
+        </script>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Warning Alert -->
+          <div class="sui_alert alert_warning">
+            <i class="fas fa-exclamation-circle"></i>
             warning Alert with icon and close button
-            <button class="al_close">&#x2715;</button>
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
           </div>
-
-          <div class="sui_alert al_danger">
-            <img src="/assets/svg/danger.svg" alt="danger icon" />
+        </script>
+        <script type="text/plain" class="line-numbers language-markup">
+          <!-- Danger Alert -->
+          <div class="sui_alert alert_danger">
+            <i class="fas fa-exclamation-triangle"></i>
             danger Alert with icon and close button
-            <button class="al_close">&#x2715;</button>
+            <button class="btn_icon_fa">
+              <i class="fas fa-times"></i>
+            </button>
           </div>
         </script>
       </div>
