@@ -25,6 +25,7 @@ main h1 {
   background: var(--PRIMARY-M3);
   position: absolute;
   top: -1rem;
+  left: 0;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
@@ -34,7 +35,8 @@ main h1 {
   padding: 5px 1rem;
   border-radius: 5px;
   position: absolute;
-  top: -3rem;
+  top: -4rem;
+  left: 0;
   color: var(--BG);
   width: fit-content;
 }
