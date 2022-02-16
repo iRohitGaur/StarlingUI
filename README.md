@@ -4,7 +4,7 @@
 
 <img alt="starling" src="./assets/starling.svg" width="1048px" height="238px" />
 
-An HTML-based UI toolkit for the web, sensible UI design, and a friendly development experience. No need to start from scratch. StarlingUI is an open-source component library that gives designers and developers the components they need to create engaging product experiences
+An HTML-based UI toolkit for the web; sensible UI design, and a friendly development experience. No need to start from scratch, StarlingUI is an open-source component library that gives designers and developers the components they need to create engaging product experiences
 
 ![GitHub followers](https://img.shields.io/github/followers/irohitgaur?style=social)
 &emsp;
@@ -17,7 +17,9 @@ An HTML-based UI toolkit for the web, sensible UI design, and a friendly develop
 </div>
 
 ---
+
 ## Live Website: [Starling UI](https://starlingui.netlify.app)
+
 ---
 
 ## Quick Start
@@ -25,13 +27,15 @@ An HTML-based UI toolkit for the web, sensible UI design, and a friendly develop
 To start using the components in your project, you will have to import the library either in your HTML or CSS file:
 
 ```html
-    <link rel="stylesheet" href="https://starlingui.netlify.app/sui.css" /> 
+<link rel="stylesheet" href="https://starlingui.netlify.app/sui.css" />
 ```
+
 ```css
-    @import url("https://starlingui.netlify.app/sui.css");
+@import url("https://starlingui.netlify.app/sui.css");
 ```
 
 ### Text Utilities
+
 - [Colors](#colors)
 - [Typography](#typography)
 
@@ -55,7 +59,7 @@ To start using the components in your project, you will have to import the libra
 
 ### Colors
 
-Convey meaning through color. In this component, you will find the color pallet used to design StarlingUI
+Convey meaning through color. In this component, you will find the color palette used to design StarlingUI
 
 Check it out at: https://starlingui.netlify.app/pages/getting-started/colors.html
 

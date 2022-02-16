@@ -25,6 +25,7 @@ main h1 {
   background: var(--PRIMARY-M3);
   position: absolute;
   top: -1rem;
+  left: 0;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
 }
@@ -34,10 +35,139 @@ main h1 {
   padding: 5px 1rem;
   border-radius: 5px;
   position: absolute;
-  top: -3rem;
+  top: -4rem;
+  left: 0;
   color: var(--BG);
   width: fit-content;
 }
+/** COLOR START **/
+.color_wrapper {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.color_align_padding {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.color_wrapper .color_primary_p5 {
+  background: var(--PRIMARY-P5);
+  color: var(--WHITE);
+}
+.color_wrapper .color_primary_p4 {
+  background: var(--PRIMARY-P4);
+  color: var(--WHITE);
+}
+.color_wrapper .color_primary_p3 {
+  background: var(--PRIMARY-P3);
+  color: var(--WHITE);
+}
+.color_wrapper .color_primary_p2 {
+  background: var(--PRIMARY-P2);
+  color: var(--WHITE);
+}
+.color_wrapper .color_primary_p1 {
+  background: var(--PRIMARY-P1);
+  color: var(--WHITE);
+}
+.color_wrapper .color_primary_main {
+  background: var(--PRIMARY);
+  color: var(--WHITE);
+}
+.color_wrapper .color_primary_m1 {
+  background: var(--PRIMARY-M1);
+  color: var(--WHITE);
+}
+.color_wrapper .color_primary_m2 {
+  background: var(--PRIMARY-M2);
+  color: var(--WHITE);
+}
+.color_wrapper .color_primary_m3 {
+  background: var(--PRIMARY-M3);
+  color: var(--WHITE);
+}
+.color_wrapper .color_primary_m4 {
+  background: var(--PRIMARY-M4);
+}
+.color_wrapper .color_primary_m5 {
+  background: var(--PRIMARY-M5);
+}
+.color_wrapper .color_v1_p2 {
+  background: var(--VARIANT-1-TXT-BG);
+  color: var(--WHITE);
+}
+.color_wrapper .color_v1_p1 {
+  background: var(--VARIANT-1P1);
+}
+.color_wrapper .color_v1_main {
+  background: var(--VARIANT-1);
+}
+.color_wrapper .color_v1_m1 {
+  background: var(--VARIANT-1M1);
+}
+.color_wrapper .color_v1_m2 {
+  background: var(--VARIANT-1BG);
+}
+.color_wrapper .color_v2_p2 {
+  background: var(--VARIANT-2-TXT-BG);
+  color: var(--WHITE);
+}
+.color_wrapper .color_v2_p1 {
+  background: var(--VARIANT-2P1);
+}
+.color_wrapper .color_v2_main {
+  background: var(--VARIANT-2);
+}
+.color_wrapper .color_v2_m1 {
+  background: var(--VARIANT-2M1);
+}
+.color_wrapper .color_v2_m2 {
+  background: var(--VARIANT-2BG);
+}
+.color_wrapper .color_v3_p2 {
+  background: var(--VARIANT-3-TXT-BG);
+  color: var(--WHITE);
+}
+.color_wrapper .color_v3_p1 {
+  background: var(--VARIANT-3P1);
+}
+.color_wrapper .color_v3_main {
+  background: var(--VARIANT-3);
+}
+.color_wrapper .color_v3_m1 {
+  background: var(--VARIANT-3M1);
+}
+.color_wrapper .color_v3_m2 {
+  background: var(--VARIANT-3BG);
+}
+/** COLOR END **/
+/** TYPOGRAPHY START **/
+.typography_reset span {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.typography_reset h1 {
+  font-size: 4.8rem;
+}
+.typography_reset h2 {
+  font-size: 3.2rem;
+}
+.typography_reset h3 {
+  font-size: 2.4rem;
+}
+.typography_reset h4 {
+  font-size: 2rem;
+}
+.typography_reset h5 {
+  font-size: 1.6rem;
+}
+.typography_reset p {
+  font-size: 1.2rem;
+}
+.typography_wrapper {
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+/** TYPOGRAPHY END **/
 /************* Prism JS Highlight CSS override START *****************/
 .code_wrapper {
   font-size: 1.4rem;
@@ -99,6 +229,11 @@ main .sui_doc_subtitle {
 }
 main .sui_doc_p {
   font-size: 1.6rem;
+}
+main .sui_usage_p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1rem 0;
 }
 main span {
   display: flex;
@@ -215,32 +350,6 @@ pre b {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-.typography_reset span {
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-.typography_reset h1 {
-  font-size: 4.8rem;
-}
-.typography_reset h2 {
-  font-size: 3.2rem;
-}
-.typography_reset h3 {
-  font-size: 2.4rem;
-}
-.typography_reset h4 {
-  font-size: 2rem;
-}
-.typography_reset h5 {
-  font-size: 1.6rem;
-}
-.typography_reset p {
-  font-size: 1.2rem;
-}
-.typography_wrapper {
-  justify-content: space-between;
-  margin-bottom: 3rem;
 }
 .font_weight {
   margin: 1rem 0;
