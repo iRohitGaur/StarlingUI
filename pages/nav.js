@@ -13,7 +13,7 @@ logoWrapper.addEventListener("click", () => (window.location = "/"));
 header.appendChild(logoWrapper);
 const ctaWrapper = document.createElement("div");
 const ih =
-  '<button id="github" class="sui_btn btn_icon_fa"><i class="fab fa-github"></i></button><button id="twitter" class="sui_btn btn_icon_fa"><i class="fab fa-twitter"></i></button><button id="burger" class="sui_btn btn_icon_fa"><i class="fas fa-bars"></i></button>';
+  '<button id="mode" class="sui_btn btn_icon_fa"><i id="mode-btn" class="fas fa-lightbulb"></i></button><button id="github" class="sui_btn btn_icon_fa"><i class="fab fa-github"></i></button><button id="twitter" class="sui_btn btn_icon_fa"><i class="fab fa-twitter"></i></button><button id="burger" class="sui_btn btn_icon_fa"><i class="fas fa-bars"></i></button>';
 ctaWrapper.innerHTML = ih;
 header.appendChild(ctaWrapper);
 
@@ -73,21 +73,31 @@ vwListener.addEventListener("change", () => {
   toggleBurger();
 });
 
+const weAreAtRoot =
+  location.pathname == "/" || window.location.href.indexOf("Index") > -1;
+
 if (window.innerWidth < 769) {
   nav.className = "collapsed";
+  if (weAreAtRoot) {
+    burger.classList.add("collapsed");
+  }
 } else {
   burger.classList.add("collapsed");
 }
 
 function toggleNav() {
-  nav.classList.contains("collapsed")
-    ? (nav.className = "")
-    : (nav.className = "collapsed");
+  if (!weAreAtRoot) {
+    nav.classList.contains("collapsed")
+      ? (nav.className = "")
+      : (nav.className = "collapsed");
+  }
 }
 function toggleBurger() {
-  burger.classList.contains("collapsed")
-    ? burger.classList.remove("collapsed")
-    : burger.classList.add("collapsed");
+  if (!weAreAtRoot) {
+    burger.classList.contains("collapsed")
+      ? burger.classList.remove("collapsed")
+      : burger.classList.add("collapsed");
+  }
 }
 
 document
@@ -108,3 +118,32 @@ document
       "noopener,noreferrer"
     )
   );
+
+// DARK MODE
+const modeBtn = document.querySelector("#mode-btn");
+
+if (localStorage.getItem("sui-mode") === "dark") {
+  setLightmode(false);
+} else {
+  setLightmode(true);
+}
+
+document.querySelector("#mode").addEventListener("click", () => {
+  if (modeBtn.classList.contains("fa-moon")) {
+    setLightmode(true);
+    localStorage.setItem("sui-mode", "light");
+  } else {
+    setLightmode(false);
+    localStorage.setItem("sui-mode", "dark");
+  }
+});
+
+function setLightmode(light) {
+  if (light) {
+    modeBtn.className = "fas fa-lightbulb";
+    document.documentElement.setAttribute("sui-mode", "light");
+  } else {
+    modeBtn.className = "fas fa-moon";
+    document.documentElement.setAttribute("sui-mode", "dark");
+  }
+}

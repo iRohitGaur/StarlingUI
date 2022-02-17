@@ -9,7 +9,7 @@
   cursor: default;
   gap: 1rem;
   font-weight: 500;
-  border: 1px solid var(--SHADE2);
+  border: 1px solid var(--SHADE);
 }
 .sui_alert .fas {
   font-size: 2.5rem;

@@ -1,10 +1,19 @@
 body {
-  background: var(--PRIMARY-BG);
+  background: var(--BG);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10rem;
   margin: auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  max-width: 120rem;
+  height: 6rem;
+}
+nav {
+  display: none;
 }
 .sui_brand {
   font-size: 10rem;

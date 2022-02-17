@@ -13,9 +13,7 @@
   --PRIMARY-M3: #ae93ff;
   --PRIMARY-M4: #c7acff;
   --PRIMARY-M5: #e0c5ff;
-
   --PRIMARY-BG: #f6edff;
-  --BG: #ffffff;
 
   --VARIANT-1BG: #fff3e8;
   --VARIANT-1M1: #ffdacf;
@@ -35,40 +33,48 @@
   --VARIANT-3P1: #f2d380;
   --VARIANT-3-TXT-BG: #ed9f3a;
 
-  --WHITE: #ffffff;
-  --WHITE-C: #ffffffcc;
-  --WHITE-A: #ffffffaa;
+  --WHITE: #f0f0f0;
+  --WHITE-C: #f0f0f0cc;
+  --WHITE-A: #f0f0f0aa;
 
-  --SHADE1: #f7f5f5;
-  --SHADE2: #f0f0f0;
-  --SHADE3: #e0e0e0;
-  --SHADE4: #d0d0d0;
-
-  --BLACK: #000000;
-  --BLACK-C: #000000cc;
-  --BLACK-A: #000000aa;
+  --BLACK: #1f1f1f;
+  --BLACK-C: #1f1f1fcc;
+  --BLACK-A: #1f1f1faa;
   --BLACK-BG: #232128;
 
-  --PRICE-OFFER: red;
-
+  --INPUT-WRONG: red;
+  --INPUT-RIGHT: green;
+  --PRICE-OFFER: #fa1a1a;
+  
+  /* PRISM HIGHLIGHT */
   --CARBON: #2d2b55;
-
   --CODE-ORANGE: #ff9d00;
   --CODE-BLUE: #9effff;
   --CODE-GREEN: #a5ff90;
   --CODE-COMMENT: #b362ff;
-
-  --INPUT-W: red;
-  --INPUT-R: green;
+  /* PRISM HIGHLIGHT */
+}
+html[sui-mode="light"] {
+  --BG: var(--WHITE);
+  --TEXT: var(--BLACK);
+  --SHADE: #e0e0e0;
+}
+html[sui-mode="dark"] {
+  --BG: var(--BLACK);
+  --TEXT: var(--WHITE);
+  --SHADE: #0e0e0e;
 }
 .sui_v1 {
   background: var(--VARIANT-1);
+  color: var(--BLACK);
 }
 .sui_v2 {
   background: var(--VARIANT-2);
+  color: var(--BLACK);
 }
 .sui_v3 {
   background: var(--VARIANT-3);
+  color: var(--BLACK);
 }
 .sui_color_text_p {
   color: var(--PRIMARY);

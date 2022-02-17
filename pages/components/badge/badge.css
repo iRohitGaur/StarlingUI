@@ -18,14 +18,18 @@
   bottom: 0;
   right: 0;
 }
+.sui_avatar i {
+  font-size: 2rem;
+  color: var(--TEXT);
+}
 .bd_num {
   color: var(--BG);
   font-size: 1.2rem;
   position: absolute;
   font-weight: 600;
-  top: -10px;
-  left: 1.8rem;
-  border-radius: 8px;
+  top: -1.2rem;
+  left: 1.6rem;
+  border-radius: 999px;
   padding: 0 5px;
 }
 .av_square .av_badge {

@@ -5,11 +5,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--BLACK-C);
+  backdrop-filter: blur(5px);
   display: none;
 }
 .sui_modal_container {
-  box-shadow: 0 0 4px 0 var(--BLACK-BG);
+  box-shadow: 0 0 2px 0 var(--TEXT);
   background: vaR(--BG);
   border-radius: 8px;
   position: relative;

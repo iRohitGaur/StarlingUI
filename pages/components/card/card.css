@@ -2,10 +2,12 @@
   margin-left: 1px;
   width: 25rem;
   height: fit-content;
-  box-shadow: 0 0 1px 0 var(--BLACK-C);
+  box-shadow: 0 0 1px 0 var(--TEXT);
   display: flex;
   flex-direction: column;
   position: relative;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .card_badge .card_overlay {
   display: initial;

@@ -3,9 +3,11 @@
 }
 .sui_input input,
 .sui_input textarea {
+  background: transparent;
+  color: var(--TEXT);
   width: 100%;
   padding: 12px 15px 8px 15px;
-  border: 1px solid var(--BLACK-C);
+  border: 1px solid var(--TEXT);
   border-radius: 4px;
   font-size: 1.6rem;
   outline: none;
@@ -17,7 +19,7 @@
 .input_req::before {
   content: "*";
   font-size: 1.6rem;
-  color: var(--INPUT-W);
+  color: var(--INPUT-WRONG);
   position: absolute;
   top: -1.2rem;
   left: 8px;
@@ -29,7 +31,7 @@
   gap: 2.2rem;
   justify-content: space-between;
   font-size: 1.6rem;
-  color: var(--BLACK-A);
+  color: var(--TEXT);
   padding: 0 10px;
   position: absolute;
   width: 100%;
@@ -40,10 +42,10 @@
   color: var(--PRIMARY);
 }
 .input_er:focus-within .input_desc {
-  color: var(--INPUT-W);
+  color: var(--INPUT-WRONG);
 }
 .input_ss:focus-within .input_desc {
-  color: var(--INPUT-R);
+  color: var(--INPUT-RIGHT);
 }
 .input_lbl,
 .input_info {
@@ -59,35 +61,35 @@
 }
 .input_er .input_info {
   display: revert;
-  color: var(--INPUT-W);
+  color: var(--INPUT-WRONG);
 }
 .input_er input {
-  border-color: var(--INPUT-W);
+  border-color: var(--INPUT-WRONG);
 }
 .input_er input:focus {
-  border-color: var(--INPUT-W);
+  border-color: var(--INPUT-WRONG);
 }
 .input_ss .input_info {
   display: revert;
-  color: var(--INPUT-R);
+  color: var(--INPUT-RIGHT);
 }
 .input_ss input {
-  border-color: var(--INPUT-R);
+  border-color: var(--INPUT-RIGHT);
 }
 .input_ss input:focus {
-  border-color: var(--INPUT-R);
+  border-color: var(--INPUT-RIGHT);
 }
 .input_er textarea {
-  border-color: var(--INPUT-W);
+  border-color: var(--INPUT-WRONG);
 }
 .input_er textarea:focus {
-  border-color: var(--INPUT-W);
+  border-color: var(--INPUT-WRONG);
 }
 .input_ss textarea {
-  border-color: var(--INPUT-R);
+  border-color: var(--INPUT-RIGHT);
 }
 .input_ss textarea:focus {
-  border-color: var(--INPUT-R);
+  border-color: var(--INPUT-RIGHT);
 }
 .input_ta .input_desc {
   gap: 4.6rem;

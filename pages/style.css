@@ -97,15 +97,19 @@ main h1 {
 }
 .color_wrapper .color_v1_p1 {
   background: var(--VARIANT-1P1);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v1_main {
   background: var(--VARIANT-1);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v1_m1 {
   background: var(--VARIANT-1M1);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v1_m2 {
   background: var(--VARIANT-1BG);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v2_p2 {
   background: var(--VARIANT-2-TXT-BG);
@@ -113,15 +117,19 @@ main h1 {
 }
 .color_wrapper .color_v2_p1 {
   background: var(--VARIANT-2P1);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v2_main {
   background: var(--VARIANT-2);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v2_m1 {
   background: var(--VARIANT-2M1);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v2_m2 {
   background: var(--VARIANT-2BG);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v3_p2 {
   background: var(--VARIANT-3-TXT-BG);
@@ -129,15 +137,19 @@ main h1 {
 }
 .color_wrapper .color_v3_p1 {
   background: var(--VARIANT-3P1);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v3_main {
   background: var(--VARIANT-3);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v3_m1 {
   background: var(--VARIANT-3M1);
+  color: var(--BLACK);
 }
 .color_wrapper .color_v3_m2 {
   background: var(--VARIANT-3BG);
+  color: var(--BLACK);
 }
 /** COLOR END **/
 /** TYPOGRAPHY START **/
@@ -360,7 +372,7 @@ pre b {
   justify-content: space-between;
 }
 .sui_nav_wrapper {
-  box-shadow: 0 0 2px 0 var(--BLACK-BG);
+  box-shadow: 0 0 2px 0 var(--TEXT);
   margin-top: 1rem;
 }
 .sui_show_modal_btn_wrapper {
@@ -432,7 +444,7 @@ pre b {
   }
 }
 .sui_grid_wrapper {
-  background: var(--SHADE2);
+  background: var(--SHADE);
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 2px var(--BLACK-BG);
@@ -442,7 +454,7 @@ pre b {
   background: var(--WHITE-A);
   padding: 1rem;
   border-radius: 4px;
-  border: 1px solid var(--SHADE3);
+  border: 1px solid var(--SHADE);
   display: grid;
   place-content: center;
   font-size: 1.6rem;

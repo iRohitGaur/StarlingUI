@@ -1,4 +1,6 @@
 body {
+  background: var(--BG);
+  color: var(--TEXT);
   display: grid;
   grid-template-areas:
     "header header"
@@ -101,6 +103,7 @@ main {
   left: 0;
   position: absolute;
 }
+#mode i,
 #github i,
 #twitter i {
   font-size: 3rem;
@@ -132,6 +135,10 @@ main {
   .starling_nav_item {
     text-align: center;
   }
+  .starling_nav_item {
+    -webkit-transition: background-position 0s;
+    transition: background-position 0s;
+  }
   main {
     padding: 0 5%;
     margin: 2rem 0;
@@ -143,5 +150,8 @@ main {
   }
   header {
     padding: 0 2rem;
+  }
+  header .sui_btn {
+    padding: 5px 10px;
   }
 }

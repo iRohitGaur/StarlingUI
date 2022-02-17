@@ -69,7 +69,7 @@
   border-radius: 5px;
 }
 .btn_txt {
-  color: initial;
+  color: var(--TEXT);
   background: none;
   border: none;
   text-decoration: underline var(--PRIMARY-M3);
