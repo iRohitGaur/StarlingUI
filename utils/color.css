@@ -53,6 +53,11 @@
   --CODE-GREEN: #a5ff90;
   --CODE-COMMENT: #b362ff;
   /* PRISM HIGHLIGHT */
+
+  /* VAR to override */
+  --BG: var(--WHITE);
+  --TEXT: var(--BLACK);
+  --SHADE: #e0e0e0;
 }
 html[sui-mode="light"] {
   --BG: var(--WHITE);
