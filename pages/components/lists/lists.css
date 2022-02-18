@@ -28,13 +28,13 @@
   color: var(--PRIMARY);
 }
 .sui_li_v1:hover {
-  color: var(--VARIANT-1-TXT-BG);
+  color: var(--VARIANT-1-DARK2);
 }
 .sui_li_v2:hover {
-  color: var(--VARIANT-2-TXT-BG);
+  color: var(--VARIANT-2-DARK2);
 }
 .sui_li_v3:hover {
-  color: var(--VARIANT-3-TXT-BG);
+  color: var(--VARIANT-3-DARK2);
 }
 .sui_ul_stacked {
   border: 1px solid var(--SHADE);
@@ -42,10 +42,10 @@
   width: 100%;
 }
 li.sui_li_stacked {
-  background: var(--PRIMARY-M2);
+  background: var(--PRIMARY-LIGHT2);
   color: var(--WHITE);
   padding: 1rem;
   margin: 1rem;
   border-radius: 4px;
-  border: 1px solid var(--PRIMARY-M1);
+  border: 1px solid var(--PRIMARY-LIGHT1);
 }

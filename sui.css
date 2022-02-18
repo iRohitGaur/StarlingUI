@@ -1,8 +1,8 @@
 @import url("/utils/reset.css");
 @import url("/utils/color.css");
-@import url("/pages/components/alert/alert.css");
 /* avatar.css is imported in badge.css */
 @import url("/pages/components/badge/badge.css");
+@import url("/pages/components/alert/alert.css");
 @import url("/pages/components/button/button.css");
 @import url("/pages/components/card/card.css");
 @import url("/pages/components/image/image.css");
@@ -12,3 +12,4 @@
 @import url("/pages/components/modal/modal.css");
 @import url("/pages/components/rating/rating.css");
 @import url("/pages/components/toast/toast.css");
+@import url("/pages/components/grid/grid.css");

@@ -1,6 +1,6 @@
 .sui_btn {
-  background: var(--PRIMARY-M1);
-  border: 2px solid var(--PRIMARY-M1);
+  background: var(--PRIMARY-LIGHT1);
+  border: 2px solid var(--PRIMARY-LIGHT1);
   border-radius: 5px;
   color: var(--WHITE);
   padding: 5px 15px;
@@ -10,10 +10,10 @@
 }
 .sui_btn:hover {
   cursor: pointer;
-  background: var(--PRIMARY-M1);
-  border: 2px solid var(--PRIMARY-M1);
+  background: var(--PRIMARY-LIGHT1);
+  border: 2px solid var(--PRIMARY-LIGHT1);
   color: var(--PRIMARY-BG);
-  box-shadow: 0 0 2px var(--PRIMARY-M1);
+  box-shadow: 0 0 2px var(--PRIMARY-LIGHT1);
   opacity: 0.9;
 }
 .btn_outline {
@@ -21,45 +21,45 @@
   color: initial;
 }
 .btn_outline.btn_v1 {
-  background: var(--VARIANT-1BG);
+  background: var(--VARIANT-1-LIGHT2);
 }
 .btn_outline.btn_v2 {
-  background: var(--VARIANT-2BG);
+  background: var(--VARIANT-2-LIGHT2);
 }
 .btn_outline.btn_v3 {
-  background: var(--VARIANT-3BG);
+  background: var(--VARIANT-3-LIGHT2);
 }
 .btn_v1 {
   background: var(--VARIANT-1);
   border: 2px solid var(--VARIANT-1);
-  color: var(--BLACK-C);
+  color: var(--BLACK-OPACITY-C);
 }
 .btn_v1:hover {
-  background: var(--VARIANT-1P1);
-  border: 2px solid var(--VARIANT-1P1);
-  box-shadow: 0 0 2px var(--VARIANT-1P1);
+  background: var(--VARIANT-1-DARK1);
+  border: 2px solid var(--VARIANT-1-DARK1);
+  box-shadow: 0 0 2px var(--VARIANT-1-DARK1);
   color: var(--BLACK);
 }
 .btn_v2 {
   background: var(--VARIANT-2);
   border: 2px solid var(--VARIANT-2);
-  color: var(--BLACK-C);
+  color: var(--BLACK-OPACITY-C);
 }
 .btn_v2:hover {
-  background: var(--VARIANT-2P1);
-  border: 2px solid var(--VARIANT-2P1);
-  box-shadow: 0 0 2px var(--VARIANT-2P1);
+  background: var(--VARIANT-2-DARK1);
+  border: 2px solid var(--VARIANT-2-DARK1);
+  box-shadow: 0 0 2px var(--VARIANT-2-DARK1);
   color: var(--BLACK);
 }
 .btn_v3 {
   background: var(--VARIANT-3);
   border: 2px solid var(--VARIANT-3);
-  color: var(--BLACK-C);
+  color: var(--BLACK-OPACITY-C);
 }
 .btn_v3:hover {
-  background: var(--VARIANT-3P1);
-  border: 2px solid var(--VARIANT-3P1);
-  box-shadow: 0 0 2px var(--VARIANT-3P1);
+  background: var(--VARIANT-3-DARK1);
+  border: 2px solid var(--VARIANT-3-DARK1);
+  box-shadow: 0 0 2px var(--VARIANT-3-DARK1);
   color: var(--BLACK);
 }
 .btn_rnd {
@@ -72,7 +72,7 @@
   color: var(--TEXT);
   background: none;
   border: none;
-  text-decoration: underline var(--PRIMARY-M3);
+  text-decoration: underline var(--PRIMARY-LIGHT3);
   text-underline-offset: 2px;
 }
 .btn_txt:hover {
@@ -84,21 +84,35 @@
 .btn_icon {
   margin-right: 5px;
 }
-.sui_btn_float {
+.sui_btn_float_fixed {
   background: transparent;
   border: none;
   color: var(--PRIMARY);
   padding: 1rem 1.5rem;
-  font-size: 6rem;
+  font-size: 4rem;
   transition: all ease 0.5s;
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
   z-index: 1;
 }
-.sui_btn_float:hover {
+.sui_btn_float_fixed:hover {
   cursor: pointer;
-  color: var(--PRIMARY-M1);
+  color: var(--PRIMARY-LIGHT1);
+}
+.float_fixed_top_left {
+  top: 2rem;
+  left: 2rem;
+}
+.float_fixed_top_right {
+  top: 2rem;
+  right: 2rem;
+}
+.float_fixed_bottom_left {
+  bottom: 2rem;
+  left: 2rem;
+}
+.float_fixed_bottom_right {
+  bottom: 2rem;
+  right: 2rem;
 }
 .btn_icon_fa {
   background: transparent;
@@ -112,33 +126,36 @@
   background: transparent;
   border: 0;
   box-shadow: none;
-  color: var(--PRIMARY-M1);
+  color: var(--PRIMARY-LIGHT1);
   cursor: pointer;
 }
-.sui_btn_flpos {
+.sui_btn_float {
   background: transparent;
   border: 0;
   box-shadow: none;
   color: var(--PRIMARY);
   position: absolute;
-  top: 5px;
-  right: 5px;
   font-size: 2rem;
   width: fit-content;
   transition: all ease 0.2s;
 }
-.sui_btn_flpos:hover {
+.sui_btn_float:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-.btn_flpos_tl {
+.float_top_left {
+  top: 5px;
   left: 5px;
 }
-.btn_flpos_br {
-  bottom: 5px;
+.float_top_right {
+  top: 5px;
   right: 5px;
 }
-.btn_flpos_bl {
+.float_bottom_left {
   bottom: 5px;
   left: 5px;
+}
+.float_bottom_right {
+  bottom: 5px;
+  right: 5px;
 }

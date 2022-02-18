@@ -29,7 +29,7 @@ nav {
   z-index: 2;
 }
 #sui_brand_text {
-  color: var(--PRIMARY-M3);
+  color: var(--PRIMARY-LIGHT3);
   transition: transform 0.2s ease-out;
   animation: changeText 2s ease-in-out infinite alternate;
 }

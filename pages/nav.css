@@ -78,14 +78,22 @@ main {
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
-  background: linear-gradient(to right, var(--PRIMARY-M2) 49%, transparent 0);
+  background: linear-gradient(
+    to right,
+    var(--PRIMARY-LIGHT2) 49%,
+    transparent 0
+  );
   background-size: 200% 100%;
   background-position: right;
   -webkit-transition: background-position 0.5s;
   transition: background-position 0.5s;
 }
 .starling_nav_item:hover {
-  background: linear-gradient(to right, var(--PRIMARY-M2) 50%, transparent 0);
+  background: linear-gradient(
+    to right,
+    var(--PRIMARY-LIGHT2) 50%,
+    transparent 0
+  );
   background-size: 200% 100%;
   background-position: left;
   cursor: pointer;
@@ -96,7 +104,7 @@ main {
 }
 .selected::before {
   content: "";
-  background: var(--PRIMARY-M2);
+  background: var(--PRIMARY-LIGHT2);
   width: 2px;
   border-radius: 0.2rem;
   height: 2.5rem;

@@ -22,30 +22,30 @@
 }
 .sui_toast_info {
   color: var(--BG);
-  background: var(--PRIMARY-M3);
+  background: var(--PRIMARY-LIGHT3);
 }
 .sui_toast_info,
 .sui_toast_info i {
-  color: var(--PRIMARY-P1);
+  color: var(--PRIMARY-DARK1);
 }
 .sui_toast_danger {
-  background: var(--VARIANT-1M1);
+  background: var(--VARIANT-1-LIGHT1);
 }
 .sui_toast_danger,
 .sui_toast_danger i {
-  color: var(--VARIANT-1-TXT-BG);
+  color: var(--VARIANT-1-DARK2);
 }
 .sui_toast_success {
   background: var(--VARIANT-2);
 }
 .sui_toast_success,
 .sui_toast_success i {
-  color: var(--VARIANT-2-TXT-BG);
+  color: var(--VARIANT-2-DARK2);
 }
 .sui_toast_warning {
-  background: var(--VARIANT-3BG);
+  background: var(--VARIANT-3-LIGHT2);
 }
 .sui_toast_warning,
 .sui_toast_warning i {
-  color: var(--VARIANT-3-TXT-BG);
+  color: var(--VARIANT-3-DARK2);
 }

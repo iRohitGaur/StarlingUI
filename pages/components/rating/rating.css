@@ -5,7 +5,7 @@
   font-size: 2rem;
 }
 .sui_rating .fas {
-  color: var(--PRIMARY-M3);
+  color: var(--PRIMARY-LIGHT3);
 }
 .sui_rating .starred,
 .sui_rating .fas:hover {
@@ -16,19 +16,19 @@
 }
 .sui_rating_v1 .starred,
 .sui_rating_v1 .fas:hover {
-  color: var(--VARIANT-1-TXT-BG);
+  color: var(--VARIANT-1-DARK2);
 }
 .sui_rating_v2 .fas {
   color: var(--VARIANT-2);
 }
 .sui_rating_v2 .starred,
 .sui_rating_v2 .fas:hover {
-  color: var(--VARIANT-2-TXT-BG);
+  color: var(--VARIANT-2-DARK2);
 }
 .sui_rating_v3 .fas {
   color: var(--VARIANT-3);
 }
 .sui_rating_v3 .starred,
 .sui_rating_v3 .fas:hover {
-  color: var(--VARIANT-3-TXT-BG);
+  color: var(--VARIANT-3-DARK2);
 }

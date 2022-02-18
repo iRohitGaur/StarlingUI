@@ -31,25 +31,25 @@
 .av_xl h2 {
   font-size: 6rem;
 }
-.av_l {
+.av_lg {
   width: 10rem;
   height: 10rem;
 }
-.av_l h2 {
+.av_lg h2 {
   font-size: 5rem;
 }
-.av_m {
+.av_md {
   width: 8rem;
   height: 8rem;
 }
-.av_m h2 {
+.av_md h2 {
   font-size: 4rem;
 }
-.av_s {
+.av_sm {
   width: 6rem;
   height: 6rem;
 }
-.av_s h2 {
+.av_sm h2 {
   font-size: 3rem;
 }
 .av_xs {

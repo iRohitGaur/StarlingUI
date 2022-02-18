@@ -8,7 +8,7 @@
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--PRIMARY-M1);
+  background-color: var(--PRIMARY-LIGHT1);
   border-radius: 5px;
 }
 /* Box sizing rules */

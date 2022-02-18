@@ -2,50 +2,50 @@
 :root {
   font-family: "Montserrat", sans-serif;
 
-  --PRIMARY-P5: #000063;
-  --PRIMARY-P4: #00007c;
-  --PRIMARY-P3: #150096;
-  --PRIMARY-P2: #2e13af;
-  --PRIMARY-P1: #482dc9;
+  --PRIMARY-DARK5: #000063;
+  --PRIMARY-DARK4: #00007c;
+  --PRIMARY-DARK3: #150096;
+  --PRIMARY-DARK2: #2e13af;
+  --PRIMARY-DARK1: #482dc9;
   --PRIMARY: #6146e2;
-  --PRIMARY-M1: #7b60fc;
-  --PRIMARY-M2: #9479ff;
-  --PRIMARY-M3: #ae93ff;
-  --PRIMARY-M4: #c7acff;
-  --PRIMARY-M5: #e0c5ff;
+  --PRIMARY-LIGHT1: #7b60fc;
+  --PRIMARY-LIGHT2: #9479ff;
+  --PRIMARY-LIGHT3: #ae93ff;
+  --PRIMARY-LIGHT4: #c7acff;
+  --PRIMARY-LIGHT5: #e0c5ff;
   --PRIMARY-BG: #f6edff;
 
-  --VARIANT-1BG: #fff3e8;
-  --VARIANT-1M1: #ffdacf;
+  --VARIANT-1-DARK2: #f45b19;
+  --VARIANT-1-DARK1: #f4afa1;
   --VARIANT-1: #f7c0b5;
-  --VARIANT-1P1: #f4afa1;
-  --VARIANT-1-TXT-BG: #f45b19;
+  --VARIANT-1-LIGHT1: #ffdacf;
+  --VARIANT-1-LIGHT2: #fff3e8;
 
-  --VARIANT-2BG: #e8ffff;
-  --VARIANT-2M1: #cffcf6;
+  --VARIANT-2-DARK2: #1a8d1a;
+  --VARIANT-2-DARK1: #a6dcd5;
   --VARIANT-2: #b5e2dc;
-  --VARIANT-2P1: #a6dcd5;
-  --VARIANT-2-TXT-BG: #1a8d1a;
+  --VARIANT-2-LIGHT1: #cffcf6;
+  --VARIANT-2-LIGHT2: #e8ffff;
 
-  --VARIANT-3BG: #ffffdf;
-  --VARIANT-3M1: #fff4ac;
+  --VARIANT-3-DARK2: #ed9f3a;
+  --VARIANT-3-DARK1: #f2d380;
   --VARIANT-3: #f4da92;
-  --VARIANT-3P1: #f2d380;
-  --VARIANT-3-TXT-BG: #ed9f3a;
+  --VARIANT-3-LIGHT1: #fff4ac;
+  --VARIANT-3-LIGHT2: #ffffdf;
 
   --WHITE: #f0f0f0;
-  --WHITE-C: #f0f0f0cc;
-  --WHITE-A: #f0f0f0aa;
+  --WHITE-OPACITY-C: #f0f0f0cc;
+  --WHITE-OPACITY-A: #f0f0f0aa;
 
-  --BLACK: #1f1f1f;
-  --BLACK-C: #1f1f1fcc;
-  --BLACK-A: #1f1f1faa;
   --BLACK-BG: #232128;
+  --BLACK: #1f1f1f;
+  --BLACK-OPACITY-C: #1f1f1fcc;
+  --BLACK-OPACITY-A: #1f1f1faa;
 
-  --INPUT-WRONG: red;
-  --INPUT-RIGHT: green;
+  --INPUT-WRONG: #ff0000;
+  --INPUT-RIGHT: #008000;
   --PRICE-OFFER: #fa1a1a;
-  
+
   /* PRISM HIGHLIGHT */
   --CARBON: #2d2b55;
   --CODE-ORANGE: #ff9d00;
@@ -80,13 +80,13 @@ html[sui-mode="dark"] {
   color: var(--PRIMARY);
 }
 .sui_color_text_v1 {
-  color: var(--VARIANT-1-TXT-BG);
+  color: var(--VARIANT-1-DARK2);
 }
 .sui_color_text_v2 {
-  color: var(--VARIANT-2-TXT-BG);
+  color: var(--VARIANT-2-DARK2);
 }
 .sui_color_text_v3 {
-  color: var(--VARIANT-3-TXT-BG);
+  color: var(--VARIANT-3-DARK2);
 }
 .sui_color_bg_p {
   color: var(--WHITE);
@@ -94,15 +94,15 @@ html[sui-mode="dark"] {
 }
 .sui_color_bg_v1 {
   color: var(--WHITE);
-  background: var(--VARIANT-1-TXT-BG);
+  background: var(--VARIANT-1-DARK2);
 }
 .sui_color_bg_v2 {
   color: var(--WHITE);
-  background: var(--VARIANT-2-TXT-BG);
+  background: var(--VARIANT-2-DARK2);
 }
 .sui_color_bg_v3 {
   color: var(--WHITE);
-  background: var(--VARIANT-3-TXT-BG);
+  background: var(--VARIANT-3-DARK2);
 }
 /* Typography */
 h1,
@@ -129,47 +129,62 @@ p,
 .p {
   font-size: 1.2rem;
 }
-.fw3 {
+.font_weight_300 {
   font-weight: 300;
 }
-.fw4 {
+.font_weight_400 {
   font-weight: 400;
 }
-.fw5 {
+.font_weight_500 {
   font-weight: 500;
 }
-.fw6 {
+.font_weight_600 {
   font-weight: 600;
 }
-.fw7 {
+.font_weight_700 {
   font-weight: 700;
 }
-.fw8 {
+.font_weight_800 {
   font-weight: 800;
 }
-.fw9 {
+.font_weight_900 {
   font-weight: 900;
 }
 /* FLEX */
-.flex_rw {
+.flex_row {
   display: flex;
 }
-.flex_cl {
+.flex_column {
   display: flex;
   flex-direction: column;
 }
-.flex_ac {
+.flex_align_center {
   align-items: center;
 }
-.flex_wp {
+.flex_align_start {
+  align-items: flex-start;
+}
+.flex_align_end {
+  align-items: flex-end;
+}
+.flex_justify_center {
+  justify-content: center;
+}
+.flex_justify_around {
+  justify-content: space-around;
+}
+.flex_justify_between {
+  justify-content: space-between;
+}
+.flex_wrap {
   flex-wrap: wrap;
 }
-.flex_g1 {
+.flex_gap1 {
   gap: 1rem;
 }
-.flex_g15 {
+.flex_gap15 {
   gap: 1.5rem;
 }
-.flex_g2 {
+.flex_gap2 {
   gap: 2rem;
 }

@@ -18,32 +18,32 @@
   font-size: 2rem;
 }
 .alert_info {
-  background: var(--PRIMARY-M3);
+  background: var(--PRIMARY-LIGHT3);
 }
 .alert_info,
 .alert_info i {
-  color: var(--PRIMARY-P1);
+  color: var(--PRIMARY-DARK1);
 }
 .alert_success {
   background: var(--VARIANT-2);
 }
 .alert_success,
 .alert_success i {
-  color: var(--VARIANT-2-TXT-BG);
+  color: var(--VARIANT-2-DARK2);
 }
 .alert_warning {
   background: var(--VARIANT-3);
 }
 .alert_warning,
 .alert_warning i {
-  color: var(--VARIANT-3-TXT-BG);
+  color: var(--VARIANT-3-DARK2);
 }
 .alert_danger {
   background: var(--VARIANT-1);
 }
 .alert_danger,
 .alert_danger i {
-  color: var(--VARIANT-1-TXT-BG);
+  color: var(--VARIANT-1-DARK2);
 }
 .alert_info .alert_close {
   color: var(--BG);
