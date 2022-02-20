@@ -13,7 +13,7 @@ logoWrapper.addEventListener("click", () => (window.location = "/"));
 header.appendChild(logoWrapper);
 const ctaWrapper = document.createElement("div");
 const ih =
-  '<button id="mode" class="sui_btn btn_icon_fa"><i id="mode-btn" class="fas fa-lightbulb"></i></button><button id="github" class="sui_btn btn_icon_fa"><i class="fab fa-github"></i></button><button id="twitter" class="sui_btn btn_icon_fa"><i class="fab fa-twitter"></i></button><button id="burger" class="sui_btn btn_icon_fa"><i class="fas fa-bars"></i></button>';
+  '<button id="mode" class="sui_btn btn_icon_fa"><i id="mode-btn" class="fas fa-sun"></i></button><button id="github" class="sui_btn btn_icon_fa"><i class="fab fa-github"></i></button><button id="twitter" class="sui_btn btn_icon_fa"><i class="fab fa-twitter"></i></button><button id="burger" class="sui_btn btn_icon_fa"><i class="fas fa-bars"></i></button>';
 ctaWrapper.innerHTML = ih;
 header.appendChild(ctaWrapper);
 
@@ -140,7 +140,7 @@ document.querySelector("#mode").addEventListener("click", () => {
 
 function setLightmode(light) {
   if (light) {
-    modeBtn.className = "fas fa-lightbulb";
+    modeBtn.className = "fas fa-sun";
     document.documentElement.setAttribute("sui-mode", "light");
   } else {
     modeBtn.className = "fas fa-moon";
