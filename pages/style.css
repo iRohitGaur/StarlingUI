@@ -241,6 +241,7 @@ main .sui_doc_subtitle {
 }
 main .sui_doc_p {
   font-size: 1.6rem;
+  text-align: justify;
 }
 main .sui_usage_p {
   font-size: 1.8rem;
@@ -371,9 +372,13 @@ pre b {
   margin-top: 2rem;
   justify-content: space-between;
 }
-.sui_nav_wrapper {
+.sui_nav_wrapper,
+.sui_nav_mobile_wrapper {
   box-shadow: 0 0 2px 0 var(--TEXT);
   margin-top: 1rem;
+}
+.sui_nav_mobile_wrapper {
+  padding: 1rem 0 1rem;
 }
 .sui_show_modal_btn_wrapper {
   margin: 2rem 0 0 0;
@@ -467,4 +472,8 @@ pre b {
 .sui_grid_wrapper_vertical {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+}
+.sui_slider_wrapper {
+  margin: 2rem 0;
+  width: fit-content;
 }

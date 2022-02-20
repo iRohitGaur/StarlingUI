@@ -59,8 +59,8 @@
         </script>
       </div>
 
-      <!-- Navigation START -->
-      <h2 class="sui_doc_subtitle">Simple Navigation Bar</h2>
+      <!-- Navigation (Desktop) START -->
+      <h2 class="sui_doc_subtitle">Simple Navigation Bar (Desktop)</h2>
       <p class="sui_doc_p">
         appears at the top of an app screen and enables navigation to different
         screens:
@@ -146,8 +146,139 @@
           </div>
         </script>
       </div>
-      <!-- Navigation END -->
+      <!-- Navigation (Desktop) END -->
+
+      <!-- Navigation (Mobile) START -->
+      <h2 class="sui_doc_subtitle">Responsive Navigation Bar (Mobile)</h2>
+      <p class="sui_doc_p">
+        similar like Desktop Navigation Bar. It pushes down the search bar when
+        the window size goes below 768px. The hamburger icon takes over at
+        600px, hiding all the other icon and buttons on the Navigation bar.
+      </p>
+      <br />
+      <!-- For representation purpose only -->
+      <p class="sui_doc_p">
+        To see this responsive navigation bar in action, view it in mobile or
+        try the responsive section in dev tools on Desktop.
+      </p>
+      <div class="sui_nav_mobile_wrapper">
+        <div class="sui_nav_mobile">
+          <div class="sui_logo_wrapper flex_row">
+            <img class="sui_logo" src="/assets/starling.svg" alt="logo" />
+            <div class="flex_column">
+              <span class="sui_logo_text">Title</span>
+              <span class="sui_logo_caption">Tagline here</span>
+            </div>
+          </div>
+
+          <div class="sui_search">
+            <div class="sui_input input_icon">
+              <div class="input_desc">
+                <span class="sui_input_lbl">search</span>
+                <span class="sui_input_info"></span>
+              </div>
+              <input type="text" />
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+
+          <div class="sui_cta_wrapper flex_row">
+            <button id="burger" class="btn_icon_fa">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="sui_cta collapsed_cta hide_cta flex_row">
+              <button class="btn_icon_fa">
+                <div class="sui_avatar">
+                  <i class="far fa-heart"></i>
+                  <div class="bd_num bd_red">88</div>
+                </div>
+              </button>
+              <button class="btn_icon_fa">
+                <div class="sui_avatar">
+                  <i class="fas fa-shopping-cart"></i>
+                  <div class="bd_num bd_red">0</div>
+                </div>
+              </button>
+              <button class="sui_btn" id="login">Login</button>
+            </div>
+          </div>
+
+          <div class="sui_search_mobile">
+            <div class="sui_input input_icon">
+              <div class="input_desc">
+                <span class="sui_input_lbl">search</span>
+                <span class="sui_input_info"></span>
+              </div>
+              <input type="text" />
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <!-- Logo & Title -->
+          <div class="sui_nav_mobile">
+            <div class="sui_logo_wrapper flex_row">
+              <img class="sui_logo" src="/assets/starling.svg" alt="logo" />
+              <div class="flex_column">
+                <span class="sui_logo_text">Title</span>
+                <span class="sui_logo_caption">Tagline here</span>
+              </div>
+            </div>
+            <!-- Search bar -->
+            <div class="sui_search">
+              <div class="sui_input input_icon">
+                <div class="input_desc">
+                  <span class="sui_input_lbl">search</span>
+                  <span class="sui_input_info"></span>
+                </div>
+                <input type="text" />
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+            <!-- CTA -->
+            <div class="sui_cta_wrapper flex_row">
+              <!-- Hamburger Button -->
+              <button id="burger" class="btn_icon_fa">
+                <i class="fas fa-bars"></i>
+              </button>
+              <!-- Favorites Button -->
+              <div class="sui_cta collapsed_cta hide_cta flex_row">
+                <button class="btn_icon_fa">
+                  <div class="sui_avatar">
+                    <i class="far fa-heart"></i>
+                    <div class="bd_num bd_red">88</div>
+                  </div>
+                </button>
+                <!-- Cart Button -->
+                <button class="btn_icon_fa">
+                  <div class="sui_avatar">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div class="bd_num bd_red">0</div>
+                  </div>
+                </button>
+                <!-- Login Button -->
+                <button class="sui_btn" id="login">Login</button>
+              </div>
+            </div>
+            <!-- Mobile Search bar -->
+            <div class="sui_search_mobile">
+              <div class="sui_input input_icon">
+                <div class="input_desc">
+                  <span class="sui_input_lbl">search</span>
+                  <span class="sui_input_info"></span>
+                </div>
+                <input type="text" />
+                <i class="fas fa-search"></i>
+              </div>
+            </div>
+          </div>
+        </script>
+      </div>
+      <!-- Navigation (Mobile) END -->
     </main>
+    <script src="navigation.js"></script>
     <script src="/utils/prism.js"></script>
     <script src="/pages/nav.js"></script>
   </body>
