@@ -376,9 +376,7 @@ pre b {
 .sui_nav_mobile_wrapper {
   box-shadow: 0 0 2px 0 var(--TEXT);
   margin-top: 1rem;
-}
-.sui_nav_mobile_wrapper {
-  padding: 1rem 0 1rem;
+  padding: 1rem 0;
 }
 .sui_show_modal_btn_wrapper {
   margin: 2rem 0 0 0;
