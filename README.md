@@ -204,7 +204,8 @@ Navigation allows movement between primary destinations in an app.
 
 StarlingUI covers the following types of Navigation:
 
-- Simple Navigation Bar
+- Simple Navigation Bar (Desktop)
+- Responsive Navigation Bar (Mobile)
 
 Check it out at: https://starlingui.netlify.app/pages/components/navigation/navigation.html
 
@@ -259,3 +260,19 @@ StarlingUI covers the following types of Grid:
 Check it out at: https://starlingui.netlify.app/pages/components/grid/grid.html
 
 ---
+
+### Slider
+
+Slider allows users to make selections from a range of values.
+
+StarlingUI covers the following types of Slider:
+
+- Standard Slider
+- Slider with Icon
+- Disabled Slider with Icon
+
+Check it out at: https://starlingui.netlify.app/pages/components/slider/slider.html
+
+---
+
+#### Learning and Growing with [@neogcamp](https://twitter.com/neogcamp)

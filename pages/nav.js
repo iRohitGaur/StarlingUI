@@ -35,6 +35,7 @@ const components = [
   "Rating",
   "Toast",
   "Grid",
+  "Slider",
 ];
 createNavElement("Get Started", false, true);
 getStarted.forEach((item) => createNavElement(item, false, false));

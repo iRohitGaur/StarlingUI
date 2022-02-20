@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <title>Starling UI - Slider - Rohit Gaur</title>
+    <link rel="stylesheet" href="/pages/style.css" />
+    <link rel="stylesheet" href="slider.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main>
+      <h1>Slider</h1>
+      <p class="sui_doc_p">
+        allows users to make selections from a range of values.
+      </p>
+      <p id="rem_notice" class="sui_doc_p">
+        Note: I have set the root font-size to 10px for this library.
+      </p>
+      <p class="sui_doc_p">
+        Instructions to import the Slider in your CSS or HTML:
+      </p>
+
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-css">
+          // CSS
+          @import url("https://starlingui.netlify.app/utils/color.css");
+          @import url("https://starlingui.netlify.app/pages/components/slider/slider.css");
+        </script>
+        <script type="text/plain" class="line-numbers language-html">
+          // HTML
+          <link rel="stylesheet" href="https://starlingui.netlify.app/utils/color.css">
+          <link rel="stylesheet" href="https://starlingui.netlify.app/pages/components/slider/slider.css">
+        </script>
+      </div>
+
+      <!-- Standard Slider START -->
+      <h2 class="sui_doc_subtitle">Standard Slider</h2>
+      <p class="sui_doc_p">
+        the demo slider shown below works between the range of 1 to 100:
+      </p>
+      <div class="sui_slider_wrapper">
+        <input
+          id="slider1"
+          class="sui_slider"
+          type="range"
+          min="1"
+          max="100"
+          value="50"
+        />
+        <label class="sui_slider_label flex_row" for="slider1">
+          <span>1</span>
+          <span>50</span>
+          <span>100</span>
+        </label>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <input id="slider1" class="sui_slider" type="range" min="1" max="100" value="50" />
+          <label class="sui_slider_label flex_row" for="slider1">
+            <span>1</span>
+            <span>50</span>
+            <span>100</span>
+          </label>
+        </script>
+      </div>
+      <!-- Standard Slider END -->
+
+      <!-- Slider with Icon START -->
+      <h2 class="sui_doc_subtitle">Slider with Icon</h2>
+      <p class="sui_doc_p">the slider shown below comes with an Icon.</p>
+      <p class="sui_doc_p">Use Case: volume control slider:</p>
+      <div class="sui_slider_wrapper">
+        <div class="sui_slider_icon">
+          <i class="fas fa-volume-up"></i>
+          <input class="sui_slider" type="range" min="1" max="100" value="80" />
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <div class="sui_slider_icon">
+            <i class="fas fa-volume-up"></i>
+            <input class="sui_slider" type="range" min="1" max="100" value="80" />
+          </div>
+        </script>
+      </div>
+      <!-- Slider with Icon END -->
+
+      <!-- Disabled Slider with Icon START -->
+      <h2 class="sui_doc_subtitle">Disabled Slider with Icon</h2>
+      <p class="sui_doc_p">the slider shown below comes with an Icon.</p>
+      <p class="sui_doc_p">Use Case: disabled volume control slider:</p>
+      <div class="sui_slider_wrapper">
+        <div class="sui_slider_icon slider_disabled">
+          <i class="fas fa-volume-mute"></i>
+          <input
+            class="sui_slider"
+            type="range"
+            min="1"
+            max="100"
+            value="50"
+            disabled
+          />
+        </div>
+      </div>
+      <div class="code_wrapper">
+        <script type="text/plain" class="line-numbers language-html">
+          <div class="sui_slider_icon slider_disabled">
+            <i class="fas fa-volume-mute"></i>
+            <input class="sui_slider" type="range" min="1" max="100" value="50" disabled />
+          </div>
+        </script>
+      </div>
+      <!-- Disabled Slider with Icon END -->
+    </main>
+    <script src="/utils/prism.js"></script>
+    <script src="/pages/nav.js"></script>
+  </body>
+</html>
