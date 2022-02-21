@@ -6,19 +6,29 @@
 
 An HTML-based UI toolkit for the web; sensible UI design, and a friendly development experience. No need to start from scratch, StarlingUI is an open-source component library that gives designers and developers the components they need to create engaging product experiences
 
-![GitHub followers](https://img.shields.io/github/followers/irohitgaur?style=social)
+[![GitHub followers](https://img.shields.io/github/followers/irohitgaur?style=social)](https://github.com/irohitgaur)
 &emsp;
 ![Forks](https://img.shields.io/github/forks/irohitgaur/starlingui)
 &emsp;
 ![Stars](https://img.shields.io/github/stars/irohitgaur/starlingui)
 &emsp;
-![Twitter Follow](https://img.shields.io/twitter/follow/irohitgaur?style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/irohitgaur?style=social)](https://twitter.com/iRohitGaur)
 
 </div>
 
 ---
 
 ## Live Website: [Starling UI](https://starlingui.netlify.app)
+
+---
+
+## Video Demo:
+https://user-images.githubusercontent.com/10892977/154945704-021ba956-b1af-429f-9103-466b98000748.mp4
+
+---
+
+## Video Demo (Mobile):
+https://user-images.githubusercontent.com/10892977/154953812-55cdfe77-61ab-4326-ac13-f69b5a295a56.mp4
 
 ---
 
@@ -54,6 +64,7 @@ To start using the components in your project, you will have to import the libra
 - [Rating](#rating)
 - [Toast](#toast)
 - [Grid](#grid)
+- [Slider](#slider)
 
 ---
 
