@@ -1,7 +1,7 @@
-const burgerBtn = document.querySelector("#burger");
+const navBurgerBtn = document.querySelector("#nav-burger");
 const mobileNav = document.querySelector(".collapsed_cta");
 
-burgerBtn.addEventListener("click", () => {
+navBurgerBtn.addEventListener("click", () => {
   mobileNav.classList.contains("hide_cta")
     ? mobileNav.classList.remove("hide_cta")
     : mobileNav.classList.add("hide_cta");
