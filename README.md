@@ -283,7 +283,3 @@ StarlingUI covers the following types of Slider:
 - Disabled Slider with Icon
 
 Check it out at: https://starlingui.netlify.app/pages/components/slider/slider.html
-
----
-
-#### Learning and Growing with [@neogcamp](https://twitter.com/neogcamp)
